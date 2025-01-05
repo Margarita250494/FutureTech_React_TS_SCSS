@@ -1,0 +1,56 @@
+# Node.js Folders and Files
+node_modules/
+dist/
+dist-ssr/
+
+# Environment and Configuration Files
+.env
+*.local
+.vscode/
+
+# Log Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# System and IDE Specific Files
+.DS_Store
+*.log
+
+# Editor Directories and Files
+.vscode/*
+# Keep the extensions configuration file for VS Code
+!.vscode/extensions.json
+.idea/
+
+# Visual Studio and Windows Specific Files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
