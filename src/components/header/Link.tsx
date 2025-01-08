@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { linkDate } from '@/shared/dateBase';
 
-export const Link = () => {
+type Props = {
+  closeMenu: () => void;
+}
+
+export const Link = ({ closeMenu }: Props) => {
   return ( 
   <>
     {linkDate.map((link) => (
@@ -11,6 +15,7 @@ export const Link = () => {
           className={({ isActive }) =>
             `header__menu-link ${isActive ? "active" : ""}`.trim()
           }
+          onClick={closeMenu}
         >
           {link.name}
         </NavLink>
