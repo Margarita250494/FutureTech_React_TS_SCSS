@@ -1,30 +1,23 @@
-import React from 'react'
 import { NavLink } from "react-router-dom";
-import { LinkData } from '@/shared/types';
-
-const linkDate: Array <LinkData>  =  [
-    {
-        to: "/",
-        name: "Home"
-    },
-    {
-        to: "/news",
-        name: "News"
-    },
-    {
-        to: "/podcasts",
-        name: "Podcasts"
-    },
-    {
-        to: "/resources",
-        name: "Resources"
-    },
-
-]
+import { linkDate } from '@/shared/dateBase';
 
 export const Link = () => {
-  return (
-    <div>Link</div> 
+  return ( 
+  <>
+    {linkDate.map((link) => (
+      <li key={link.to} className="header__menu_item">
+        <NavLink
+          to={link.to}
+          className={({ isActive }) =>
+            `header__menu-link ${isActive ? "active" : ""}`.trim()
+          }
+        >
+          {link.name}
+        </NavLink>
+      </li>
+    ))}
+  </>
+    
   )
 }
 

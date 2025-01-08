@@ -1,0 +1,6 @@
+@use '../helpers' as *;
+@use '../variables';
+
+.logo{
+    max-width: fluid(179, 126);
+}

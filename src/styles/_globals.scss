@@ -107,9 +107,14 @@ button {
     }
 }
 
- ul li a.active {
-    background-color: #ffd633;
-    color: #141414;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+a, 
+button{
+    &[aria-label]{
+        position: relative;
+        &::before{
+            @include abs-center;
+            @include square (rem(44));
+            content: '';
+        }
+    }
+}

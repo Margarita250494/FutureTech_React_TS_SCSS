@@ -18,6 +18,7 @@
     --color-yellow-55: #ffd11a;
     --color-red: #ff5500;
 
+
     --gradient: linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-yellow-55) 136%);
 
     --border: #{rem(1)} solid var(--color-dark-15);
@@ -32,7 +33,7 @@
     --container-width: #{rem(1600)};
     --container-padding-x: #{rem(16)};
 
-    --transition-duration: 0.3s;
+    --transition-duration: 0.2s;
 
     //$100vw: calc(100vw - var(--scrollbar-width));
 

@@ -265,7 +265,7 @@ svg * {
   --font-family-accent: "Kumbh Sans", sans-serif;
   --container-width: 100rem;
   --container-padding-x: 1rem;
-  --transition-duration: 0.3s;
+  --transition-duration: 0.2s;
 }
 @media (width <= 90.06125rem) {
   :root {
@@ -413,11 +413,194 @@ button[aria-label]::before {
   content: "";
 }
 
-ul li a.active {
-  background-color: #ffd633;
-  color: #141414;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+a[aria-label],
+button[aria-label] {
+  position: relative;
+}
+a[aria-label]::before,
+button[aria-label]::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  content: "";
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  /*&::after{
+      --size:1.5rem;
+
+      @include square(var(--size));
+
+      content: '';
+      flex-shrink: 0;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }*/
+}
+.icon--yellow-arrow {
+  --size:1.5rem;
+  width: var(--size);
+  height: var(--size);
+}
+@media (width <= 90.06125rem) {
+  .icon--yellow-arrow {
+    --size:1.25rem;
+  }
+}
+
+.logo {
+  max-width: clamp(7.875rem, 7.0306372549rem + 3.4640522876vw, 11.1875rem);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 1.125rem 1.5rem;
+  font-size: 1.125rem;
+  color: var(--color-gray-60);
+  background-color: var(--color-dark);
+  white-space: nowrap;
+  border: var(--border);
+  border-radius: 0.75rem;
+}
+@media (width <= 90.06125rem) {
+  .button {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (any-hover: hover) {
+  .button:hover {
+    color: var(--color-yellow-55);
+    border-color: var(--color-yellow-55);
+    background-color: var(--color-dark-10);
+  }
+}
+@media (any-hover: none) {
+  .button:active {
+    color: var(--color-yellow-55);
+    border-color: var(--color-yellow-55);
+    background-color: var(--color-dark-10);
+  }
+}
+.button--accent {
+  background-color: var(--color-yellow-55);
+  border-color: var(--color-yellow-55);
+  color: var(--color-dark);
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.burger-button {
+  width: 2.125rem;
+  height: 2.125rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.53125rem 0.265625rem;
+  color: var(--color-light);
+  background-color: transparent;
+  border: none;
+}
+@media (any-hover: hover) {
+  .burger-button:hover {
+    color: var(--color-yellow-55);
+  }
+}
+@media (any-hover: none) {
+  .burger-button:active {
+    color: var(--color-yellow-55);
+  }
+}
+.burger-button.active .burger-button__line:first-child {
+  rotate: 45deg;
+  transform-origin: 0;
+  translate: 0.25em -0.1em;
+}
+.burger-button.active .burger-button__line:nth-child(2) {
+  rotate: -45deg;
+}
+.burger-button.active .burger-button__line:last-child {
+  width: 0;
+}
+.burger-button__line {
+  background-color: currentColor;
+  width: 100%;
+  height: 0.125rem;
+  border-radius: 1rem;
+  transition-duration: var(--transition-duration);
+}
+.burger-button__line:last-child {
+  align-self: end;
+  width: 55%;
+}
+
+.header__promo {
+  padding-block: 1.25rem;
+  text-align: center;
+  border-bottom: var(--border);
+}
+@media (width <= 47.99875rem) {
+  .header__promo {
+    padding-block: 0.875rem;
+  }
+}
+.header__body {
+  padding-block: 1.5rem;
+  background-color: var(--color-dark-10);
+}
+.header__body-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+@media (width > 47.99875rem) {
+  .header__overlay {
+    display: contents;
+  }
+}
+@media (width <= 47.99875rem) {
+  .header__overlay:not(.active) {
+    opacity: 0;
+    visibility: hidden;
+    translate: 100%;
+  }
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+@media (width <= 90.06125rem) {
+  .header__menu-list {
+    column-gap: 0.375rem;
+  }
+}
+.header__menu-link {
+  padding: 0.875rem 1.5rem;
+  color: var(--color-gray-50);
+}
+@media (width <= 90.06125rem) {
+  .header__menu-link {
+    padding: 0.625rem 1.125rem;
+  }
+}
+.header__menu-link.active {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: 0.625rem;
+  font-weight: 500;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=main.css.map */
