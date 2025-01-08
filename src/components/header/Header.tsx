@@ -4,16 +4,18 @@ import { Link } from "./Link";
 import { useState } from "react";
 import { ContactUsLink } from "./ContactUsLink";
 import { BurgerMenuIcon } from "./BurgerMenuIcon";
-import { useIsMobile } from "@/shared/hooks";
+import { useIsMobile, useBodyNoScroll } from "@/shared/hooks";
 import { MOBILE_MEDIA_QUERY } from "@/shared/constants";
 
 
 export const Header = () => {
   const isMobile = useIsMobile(MOBILE_MEDIA_QUERY);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  const closeMenu = () => setIsMenuOpen(false);
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => setIsMenuVisible(false);
+  const toggleMenu = () => setIsMenuVisible((prev) => !prev);
+
+  useBodyNoScroll(isMenuVisible && isMobile);
 
   return (
     <header className="header">
@@ -41,26 +43,26 @@ export const Header = () => {
             />
           </a>
           <div 
-            className={`header__overlay ${isMenuOpen && isMobile ? "active" : ""}`}>
+            className={`header__overlay ${isMenuVisible && isMobile ? "active" : ""}`}>
             <nav className="header__menu">
               <ul className="header__menu-list">
                 <Link  closeMenu={closeMenu}/>
               </ul>
             </nav>
             <ContactUsLink
-              className={`header__contact-us-link button button--accent ${isMenuOpen && isMobile ? "" : "visible-mobile"}` }
+              className={`header__contact-us-link button button--accent ${isMenuVisible && isMobile ? "" : "visible-mobile"}` }
             />
           </div>
 
           {isMobile ? (
             <button
             className={`header__burger-button burger-button ${
-              isMenuOpen ? "active" : ""
+              isMenuVisible ? "active" : ""
             }`}
-              aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-              title={isMenuOpen ? "Close Menu" : "Open Menu"}
+              aria-label={isMenuVisible ? "Close Menu" : "Open Menu"}
+              title={isMenuVisible ? "Close Menu" : "Open Menu"}
               onClick={toggleMenu}
-              aria-expanded={isMenuOpen}
+              aria-expanded={isMenuVisible}
               aria-controls="menu"
             >
               <BurgerMenuIcon/>
@@ -73,7 +75,3 @@ export const Header = () => {
     </header>
   );
 };
-
-
-//className="header__contact-us-link button button--accent"
-//style={{ display: isMenuOpen ? "block" : "none" }}

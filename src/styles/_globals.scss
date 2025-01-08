@@ -1,6 +1,13 @@
 @use "helpers" as *;
 @use "variables" as *;
 
+html{
+    .no-scroll{
+        overflow: hidden;
+    }
+}
+
+
 body {
     @include fluid-text(18, 14);
 

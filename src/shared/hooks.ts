@@ -14,3 +14,21 @@ export const useIsMobile = (query: string): boolean => {
 
   return isMobile;
 };
+
+/**
+ * @param isActive - if true , adds the no-scroll class, otherwise, removes it
+ */
+
+export const useBodyNoScroll = (isActive:boolean) => {
+  useEffect(()=>{
+    if(isActive){
+      document.body.classList.add("no-scroll");
+    } else{
+      document.body.classList.remove("no-scroll");
+    }
+
+    return() => {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isActive])
+}
