@@ -2,6 +2,7 @@
 @use "variables" as *;
 
 html{
+    height: 100%;
     .no-scroll{
         overflow: hidden;
     }
@@ -11,10 +12,22 @@ html{
 body {
     @include fluid-text(18, 14);
 
+    height: 100%;
     font-family: var(--font-family-base);
     letter-spacing: -0.03em;
     color: var(--color-gray-50);
     background-color: var(--color-dark);
+    
+}
+
+#root{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
 }
 
 h1,

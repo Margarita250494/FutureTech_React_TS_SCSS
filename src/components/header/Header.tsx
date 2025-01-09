@@ -1,11 +1,11 @@
 import logo from "@/assets/images/logo.svg";
-import yellowArrow from "@/assets/icons/yellowArrow.svg";
 import { Link } from "./Link";
 import { useState } from "react";
 import { ContactUsLink } from "./ContactUsLink";
 import { BurgerMenuIcon } from "./BurgerMenuIcon";
 import { useIsMobile, useBodyNoScroll } from "@/shared/hooks";
 import { MOBILE_MEDIA_QUERY } from "@/shared/constants";
+import { LinkImgArrow } from "../LinkImgArrow";
 
 
 export const Header = () => {
@@ -21,14 +21,12 @@ export const Header = () => {
     <header className="header">
       <div className="header__promo">
         <div className="header__promo-inner container">
-          <a
+          <LinkImgArrow
             href="/"
-            className="header__promo-link">
-            <span className="icon">
-              Subscribe to our Newsletter For New & latest Blogs and Resources
-              <img className="icon--yellow-arrow" src={yellowArrow} alt="" />
-            </span>
-          </a>
+            className="header__promo-link"
+            >
+            Subscribe to our Newsletter For New & latest Blogs and Resources
+          </LinkImgArrow>
         </div>
       </div>
       <div className="header__body">

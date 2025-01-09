@@ -9,7 +9,7 @@ export const Link = ({ closeMenu }: Props) => {
   return ( 
   <>
     {linkDate.map((link) => (
-      <li key={link.to} className="header__menu_item">
+      <li key={link.to} className="header__menu-item">
         <NavLink
           to={link.to}
           className={({ isActive }) =>

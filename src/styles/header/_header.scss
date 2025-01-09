@@ -2,7 +2,22 @@
 @use '../variables';
 
 .header{
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: rem(80) rem(200);
+    
+    @keyframes scrolling-header {
+        to{
+            box-shadow: 0 0 1rem var(--color-dark-40);
+        }
+    }
     &__promo{
+        background-color: var(--color-dark);
         padding-block: rem(20);
         text-align: center;
         border-bottom: var(--border);
