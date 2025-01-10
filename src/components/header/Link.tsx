@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { linkDate } from '@/shared/dateBase';
+import { linkDate } from "./headerData";
 
 type Props = {
   closeMenu: () => void;

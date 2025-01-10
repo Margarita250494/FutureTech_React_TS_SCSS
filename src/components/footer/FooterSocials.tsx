@@ -1,4 +1,4 @@
-import { socialLinks } from "@/shared/dateBase";
+import { socialLinks } from "./footerData";
 
 export const FooterSocials = () => {
   return (

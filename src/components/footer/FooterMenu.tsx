@@ -1,4 +1,4 @@
-import { footerMenuData, footerMenuButton } from "@/shared/dateBase";
+import { footerMenuData, footerMenuButton } from "./footerData";
 import { FooterMenuData } from "@/shared/types";
 import { NavLink } from "react-router-dom";
 import { LinkImgArrow } from "../LinkImgArrow";

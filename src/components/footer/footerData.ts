@@ -1,28 +1,7 @@
 import { TwitterIcon } from "@/assets/icons/TwitterIcon"
-import { LinkData, FooterMenuData, SocialLink } from "./types"
+import { FooterMenuData, SocialLink } from "@/shared/types"
 import { LinkedInIcon } from "@/assets/icons/LinkedInIcon"
 import { MediumIcon } from "@/assets/icons/MediumIcon"
-
-//Header.tsx => Link.tsx
-export const linkDate: Array <LinkData>  =  [
-    {
-        to: "/",
-        name: "Home"
-    },
-    {
-        to: "/news",
-        name: "News"
-    },
-    {
-        to: "/podcasts",
-        name: "Podcasts"
-    },
-    {
-        to: "/resources",
-        name: "Resources"
-    },
-
-]
 
 //Footer.tsx => FooterMenu.tsx
 export const footerMenuData: FooterMenuData[] = [

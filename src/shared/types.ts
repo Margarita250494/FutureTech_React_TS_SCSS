@@ -16,7 +16,19 @@ export interface SocialLink {
 }
 
 export interface Metrics {
-  title:string,
-  value:string,
-  sign: string
+  title: string;
+  value: string;
+  sign: string;
+}
+
+export interface TeamMember {
+  name: string;
+  img: string;
+}
+
+export interface Advantages {
+  icon: string;
+  title: string;
+  subtitle: string;
+  detail: string;
 }

@@ -13,13 +13,13 @@ export const Metrics = () => {
     : metricsData.slice(0, -1);
 
   return (
-    <div className="hero__metrics metrics">
+    <div className="hero__metrics metrics full-vw-line full-vw-line--top full-vw-line--left">
       <dl className="metrics__list">
         {filteredMetricsData.map((metric) => (
           <div key={metric.title} className="metrics__item">
             <dt className="metrics__key">{metric.title}</dt>
             <dd className="metrics__value h3">
-              {metric.value} <span className="metrics__sign">{metric.sign}</span>
+              {metric.value}<span className="metrics__sign">{metric.sign}</span>
             </dd>
           </div>
         ))}
