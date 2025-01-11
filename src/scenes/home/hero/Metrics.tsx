@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { metricsData } from "./homeData";
+import { metricsData } from "../homeData";
 
 export const Metrics = () => {
   const location = useLocation();

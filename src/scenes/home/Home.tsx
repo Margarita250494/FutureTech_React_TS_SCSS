@@ -1,6 +1,6 @@
 
-import { FeatureSection} from "./FeatureSection";
-import {HeroSection} from "./HeroSection";
+import { FeatureSection} from "./feature/FeatureSection";
+import {HeroSection} from "./hero/HeroSection";
 
 //type Props = {}
 

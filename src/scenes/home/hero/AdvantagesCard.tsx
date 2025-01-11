@@ -1,4 +1,4 @@
-import { advantages } from "./homeData";
+import { advantages } from "../homeData";
 
 export const AdvantagesCard = () => {
   return (

@@ -1,4 +1,4 @@
-import { team } from "./homeData";
+import { team } from "../homeData";
 
 export const Team = () => {
   return (
