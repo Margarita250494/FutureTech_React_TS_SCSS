@@ -5,6 +5,10 @@
     &__list{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        @include mobile{
+            align-items: start;
+        }
     }
 
     &__item{
@@ -22,6 +26,11 @@
         @include laptop{
             padding: rem(30) rem(40);
             row-gap: rem(2);
+        }
+
+        @include tablet{
+            row-gap: 0;
+            padding: rem(20);
         }
     }
 
