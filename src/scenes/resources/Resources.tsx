@@ -1,3 +1,4 @@
+
 import { Metrics } from "../home/hero/Metrics"
 
 
@@ -8,6 +9,7 @@ export const Resources = () => {
     <>
     <h1>Welcome to the Resources Page</h1>
       <Metrics/>
+      
     </>
       
     )

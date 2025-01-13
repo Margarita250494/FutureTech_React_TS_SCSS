@@ -9,7 +9,7 @@ type Props = {
 
 export const Header = ({ id, subtitle, title, link }: Props) => {
   return (
-    <header className="section__header" aria-labelledby={id}>
+    <header className="section__header">
       <div className="section__header-inner container">
         <div className="section__header-info">
           <p className="section__subtitle tag">{subtitle}</p>
