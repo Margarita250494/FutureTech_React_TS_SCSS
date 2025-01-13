@@ -1,11 +1,10 @@
 # React + TypeScript + Vite
+  transform the Projekt to React TS
+# Based on:
+  1. Figma template : https://www.figma.com/design/4XyN44rldgcYPYvoZM6HSK/FutureTech-(Copy)?node-id=18-400&t=z6v2bNztD1xNbosC-0
+  2. Youtube tutorial HTML,SCSS,JS : https://www.youtube.com/watch?v=hkYzqTKnSIg&t=13251s
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Expanding the ESLint configuration
 
