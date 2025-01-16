@@ -1,9 +1,6 @@
 import { Header } from "@/components/section/Header";
 import { SectionBody } from "@/components/section/SectionBody";
-import {futureTechnologyBlog, researchInsightsBlogs} from '@/components/section/data'
-
-import icon1 from "@/assets/icons/feature/1.svg"
-import icon2 from "@/assets/icons/feature/2.svg"
+import {featureSectionsData} from "@/components/section/data";
 
 export const FeatureSection = () => {
   return (
@@ -14,20 +11,16 @@ export const FeatureSection = () => {
         title="FutureTech Features"
       />
       <div className="section__body">
-        <SectionBody
-          img={icon1}
-          title="Future Technology Blog"
-          description="Stay informed with our blog section dedicated to future technology."
-          className="card__grid--2-cols"
-          data={futureTechnologyBlog}
-        />
-        <SectionBody
-          img={icon2}
-          title="Research Insights Blogs"
-          description="Dive deep into future technology concepts with our research section."
-          className="card__grid--2-cols"
-          data={researchInsightsBlogs}
-        />
+        {featureSectionsData.map((feature, index) => (
+          <SectionBody
+            key={index}
+            img={feature.img}
+            title={feature.title}
+            description={feature.description}
+            className={feature.className}
+            data={feature.data}
+          />
+        ))}
       </div>
     </section>
   );

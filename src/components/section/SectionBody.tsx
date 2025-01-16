@@ -1,13 +1,9 @@
 import { useLocation } from "react-router-dom";
 import { CardCell } from "./CardCell";
+import { SectionData } from "@/shared/types";
+import { classNames } from "@/shared/constants";
 
-type Props = {
-  img: string;
-  title: string;
-  description: string;
-  className?: string;
-  data: { title: string; description: string }[]; 
-};
+type Props = SectionData;
 
 export const SectionBody = ({
   img,
@@ -43,7 +39,7 @@ export const SectionBody = ({
             {isResourcesPage ? <div className="card__preview-extra"></div> : ""}
           </div>
           <div className="card__body">
-            <div className={`card__grid ${className}`.trim()}>
+            <div className={classNames("card__grid", className)}>
               {data.map((item, index) => (
                 <CardCell key={index} data={item} />
               ))}

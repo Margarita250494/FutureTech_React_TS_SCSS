@@ -1,4 +1,5 @@
 
+import { BlogSection } from "./blog/BlogSection";
 import { FeatureSection} from "./feature/FeatureSection";
 import {HeroSection} from "./hero/HeroSection";
 
@@ -9,6 +10,7 @@ export const Home = () => {
     <>
     <HeroSection/>
     <FeatureSection/>
+    <BlogSection/>
     </>
     
     

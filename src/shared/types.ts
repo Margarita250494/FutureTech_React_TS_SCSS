@@ -32,3 +32,36 @@ export interface Advantages {
   subtitle: string;
   detail: string;
 }
+
+export type SectionData = {
+  img: string;
+  title: string;
+  description: string;
+  className?: string;
+  data: { title: string; description: string }[];
+};
+
+export interface Section{
+  title:string;
+  description:string;
+}
+
+export type ActionProps = {
+  title: string;
+  ariaLabel: string;
+  icon?: () => JSX.Element;
+  info: string;
+};
+
+export type BlogCardProps = {
+  author: {
+    imageSrc: string;
+    name: string;
+    department: string;
+  };
+  dateTime: string;
+  date: string;
+  title: string;
+  description: string;
+  actions: ActionProps[];
+};

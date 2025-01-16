@@ -472,6 +472,10 @@ button[aria-label]::before {
   content: "";
 }
 
+.tabs__button.active {
+  background-color: red;
+}
+
 .icon {
   display: inline-flex;
   align-items: center;
