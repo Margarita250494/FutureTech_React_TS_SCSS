@@ -1,9 +1,14 @@
-import { team } from "../homeData";
+import { TeamMember } from "@/shared/types";
 
-export const Team = () => {
+type Props = {
+  classname: string;
+  people: TeamMember[]; 
+};
+
+export const Team = ({ classname, people }: Props) => {
   return (
-    <div className="resources-preview__team team">
-      {team.map((person) => (
+    <div className={classname}>
+      {people.map((person) => (
         <img
           key={person.name}
           src={person.img}

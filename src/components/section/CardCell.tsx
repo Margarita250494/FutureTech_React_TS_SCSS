@@ -17,3 +17,4 @@ export const CardCell = ({ data }: CardProps) => {
     </div>
   );
 };
+

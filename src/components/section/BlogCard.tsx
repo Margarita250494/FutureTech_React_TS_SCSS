@@ -12,14 +12,13 @@ export const BlogCard = ({
   actions
 }: BlogCardProps) => {
   return (
-    
     <article className="blog-card container">
       <PersonCard 
         imageSrc={author.imageSrc}
         name={author.name}
         department={author.department}/>
       <div className="blog-card__body">
-        <time dateTime={dateTime} className="blog-card__date">
+        <time dateTime={dateTime} className="blog-card__date h6">
           {date}
         </time>
         <div className="blog-card__info">

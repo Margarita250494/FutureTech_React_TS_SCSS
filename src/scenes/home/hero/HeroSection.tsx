@@ -3,6 +3,7 @@ import { Metrics } from "./Metrics";
 import { Team } from "./Team";
 import { LinkImgArrow } from "@/components/LinkImgArrow";
 import { AdvantagesCard } from "./AdvantagesCard";
+import { team } from "../homeData";
 
 export const HeroSection = () => {
   return (
@@ -20,7 +21,8 @@ export const HeroSection = () => {
         </div>
         <Metrics />
         <div className="hero__resources-preview resources-preview">
-          <Team />
+          <Team 
+          classname="resources-preview__team team" people={team}/>
           <div className="resources-preview__body">
             <p className="resources-preview__title h5">
               Explore 1000+ resources

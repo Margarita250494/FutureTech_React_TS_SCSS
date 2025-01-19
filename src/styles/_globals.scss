@@ -139,8 +139,9 @@ button{
     }
 }
 
-.tabs__button{
-    &.active{
-        background-color: red;
+.list__item{
+    &:not(:last-child){
+        border-bottom: var(--border);
     }
+    
 }

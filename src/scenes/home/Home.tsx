@@ -2,8 +2,7 @@
 import { BlogSection } from "./blog/BlogSection";
 import { FeatureSection} from "./feature/FeatureSection";
 import {HeroSection} from "./hero/HeroSection";
-
-//type Props = {}
+import { ResourcesSection } from "./resources/ResourcesSection";
 
 export const Home = () => {
   return (
@@ -11,6 +10,7 @@ export const Home = () => {
     <HeroSection/>
     <FeatureSection/>
     <BlogSection/>
+    <ResourcesSection/>
     </>
     
     
