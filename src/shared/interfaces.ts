@@ -104,3 +104,11 @@ export interface Resource {
     extra: ResourceExtra;
     cardCellBigData: CardCellBigData;
 }
+
+export interface Review{
+    img: string,
+    name:string,
+    department:string,
+    blockquote:string,
+    rating: number,
+}

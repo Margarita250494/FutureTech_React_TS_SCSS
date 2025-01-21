@@ -1,13 +1,6 @@
 import { Metrics, TeamMember, Advantages } from "@/shared/interfaces"
-import image1 from '@/assets/images/team/Image.png'
-import image2 from '@/assets/images/team/Image-2.png'
-import image3 from '@/assets/images/team/Image-3.png'
-import image4 from '@/assets/images/team/Image-4.png'
-
-import icon1 from '@/assets/icons/adventages/icon-1.svg'
-import icon2 from '@/assets/icons/adventages/icon-2.svg'
-import icon3 from '@/assets/icons/adventages/icon-3.svg'
-
+import { image1,image2,image3,image4 } from "@/assets/images/team/team"
+import { icon1,icon2,icon3 } from "@/assets/icons/adventages/adventages"
 
 export const metricsData: Array <Metrics> = [
     {

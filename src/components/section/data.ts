@@ -1,38 +1,11 @@
-import { Section, FeatureSections, TabConfig, BlogPost, Resource } from "@/shared/interfaces";
-import icon1 from "@/assets/icons/feature/1.svg";
-import icon2 from "@/assets/icons/feature/2.svg";
+import { Section, FeatureSections, TabConfig, BlogPost, Resource, Review } from "@/shared/interfaces";
+import { image1,image2,image2 as john,image3,image3 as sara,image4,image4 as astronomer,image5,image6,image7,image8 } from "@/assets/images/team/team";
+import { icon1, icon2 } from "@/assets/icons/feature/feature";
+import { review1,review2,review3,review4,review5,review6 } from "@/assets/images/reviews/review";
+import { icon_1, icon_2, eye } from "@/assets/icons/resources/resources";
+import { details1, details2 } from "@/assets/images/resources/resource";
+import { LikeIcon, Comment,Repost } from "@/assets/icons/icons";
 
-import john from "@/assets/images/team/Image-2.png";
-import sara from "@/assets/images/team/Image-3.png";
-import astronomer from "@/assets/images/team/Image-4.png";
-
-import icon_1 from "@/assets/icons/resources/icon-1.svg";
-import icon_2 from "@/assets/icons/resources/Icon-2.svg";
-
-import image1 from "@/assets/images/team/Image.png";
-import image2 from "@/assets/images/team/Image-2.png";
-import image3 from "@/assets/images/team/Image-3.png";
-import image4 from "@/assets/images/team/Image-4.png";
-
-import image5 from "@/assets/images/team/image_5.png";
-import image6 from "@/assets/images/team/image_6.png";
-import image7 from "@/assets/images/team/image_7.png";
-import image8 from "@/assets/images/team/image_8.png";
-
-import { LikeIcon } from "@/assets/icons/LikeIcon";
-import { Comment } from "@/assets/icons/Comment";
-import { Repost } from "@/assets/icons/Repost";
-
-import eye from "@/assets/icons/resources/yellow-eye.svg";
-import details1 from "@/assets/images/resources/details-1.jpg";
-import details2 from "@/assets/images/resources/details-2.jpg";
-
-import review1 from "@/assets/images/reviews/review-1.png"
-import review2 from "@/assets/images/reviews/review-2.png"
-import review3 from "@/assets/images/reviews/review-3.png"
-import review4 from "@/assets/images/reviews/review-4.png"
-import review5 from "@/assets/images/reviews/review-5.png"
-import review6 from "@/assets/images/reviews/review-6.png"
 /**
  * Scene: HOME => feature/FeatureSection
  */
@@ -303,8 +276,7 @@ export const resourcesData: Array <Resource> = [
     },
   },
 ];
-
-export const reviewsData = [
+export const reviewsData: Array <Review> = [
   {
     img: review1,
     name:"Sarah Thompson",

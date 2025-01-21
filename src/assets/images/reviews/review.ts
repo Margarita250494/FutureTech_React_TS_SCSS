@@ -1,0 +1,6 @@
+export {default as review1} from "./review-1.png"
+export {default as review2} from "./review-2.png"
+export {default as review3} from "./review-3.png"
+export {default as review4} from "./review-4.png"
+export {default as review5} from "./review-5.png"
+export {default as review6} from "./review-6.png"
