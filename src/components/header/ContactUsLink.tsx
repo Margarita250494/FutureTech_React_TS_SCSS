@@ -1,11 +1,6 @@
-import React from 'react'
+import { ContactUsProps } from '@/shared/types'
 
-type Props = {
-    className:string;
-    style?: React.CSSProperties
-}
-
-export const ContactUsLink = ({className, style}: Props) => {
+export const ContactUsLink = ({className, style}: ContactUsProps) => {
   return (
     <a 
         href="/"

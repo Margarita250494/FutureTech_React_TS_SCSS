@@ -1,5 +1,5 @@
 import { TwitterIcon } from "@/assets/icons/TwitterIcon"
-import { FooterMenuData, SocialLink } from "@/shared/types"
+import { FooterMenuData, SocialLink } from "@/shared/interfaces"
 import { LinkedInIcon } from "@/assets/icons/LinkedInIcon"
 import { MediumIcon } from "@/assets/icons/MediumIcon"
 

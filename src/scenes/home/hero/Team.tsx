@@ -1,11 +1,8 @@
-import { TeamMember } from "@/shared/types";
+import { TeamProps } from "@/shared/types";
 
-type Props = {
-  classname: string;
-  people: TeamMember[]; 
-};
 
-export const Team = ({ classname, people }: Props) => {
+
+export const Team = ({ classname, people }: TeamProps) => {
   return (
     <div className={classname}>
       {people.map((person) => (

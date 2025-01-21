@@ -4,9 +4,8 @@ import { resourcesData } from "./data";
 
 type Props = {
     resource: typeof resourcesData[0];
-  };
+};
   
-
 export const CardContainer = ({resource}: Props) => {
   return (
     <div className="card container">

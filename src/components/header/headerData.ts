@@ -1,4 +1,4 @@
-import { LinkData } from "@/shared/types"
+import { LinkData } from "@/shared/interfaces"
 
 
 export const linkDate: Array <LinkData>  =  [

@@ -1,13 +1,7 @@
 import { LinkImgArrow } from "../LinkImgArrow";
+import { SectionHeader } from "@/shared/types";
 
-type Props = {
-  id: string;
-  subtitle: string;
-  title: string;
-  link?: string;
-};
-
-export const Header = ({ id, subtitle, title, link }: Props) => {
+export const Header = ({ id, subtitle, title, link }: SectionHeader) => {
   return (
     <header className="section__header">
       <div className="section__header-inner container">

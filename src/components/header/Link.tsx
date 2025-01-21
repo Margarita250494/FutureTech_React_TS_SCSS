@@ -1,11 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { linkDate } from "./headerData";
+import { LinkProps} from "@/shared/types";
 
-type Props = {
-  closeMenu: () => void;
-}
-
-export const Link = ({ closeMenu }: Props) => {
+export const Link = ({ closeMenu }: LinkProps) => {
   return ( 
   <>
     {linkDate.map((link) => (

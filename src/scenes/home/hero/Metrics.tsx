@@ -3,11 +3,7 @@ import { metricsData } from "../homeData";
 
 export const Metrics = () => {
   const location = useLocation();
-
-  // Prüfen, ob wir auf der "Resources"-Seite sind
   const isResourcesPage = location.pathname === "/resources";
-
-  // Daten filtern, das letzte Objekt nur anzeigen, wenn es die "Resources"-Seite ist
   const filteredMetricsData = isResourcesPage
     ? metricsData
     : metricsData.slice(0, -1);

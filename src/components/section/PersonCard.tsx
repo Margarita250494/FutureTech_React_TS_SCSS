@@ -1,8 +1,4 @@
-type PersonCardProps = {
-  imageSrc: string;
-  name: string;
-  department: string;
-};
+import { PersonCardProps } from "@/shared/types";
 
 export const PersonCard = ({ imageSrc, name, department }: PersonCardProps) => {
   return (

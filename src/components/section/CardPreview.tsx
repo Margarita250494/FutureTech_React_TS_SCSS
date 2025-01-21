@@ -1,17 +1,6 @@
 import { LinkImgArrow } from "../LinkImgArrow";
 import { Team } from "@/scenes/home/hero/Team";
-import { TeamMember } from "@/shared/types";
-
-type Props = {
-  img: string;
-  title: string;
-  description: string;
-  link?: string;
-  href?: string;
-  className?: string;
-  extra?: { subTitle: string; subDescription: string; images: TeamMember[] };
-  people?: TeamMember[];
-};
+import { CardPreviewProps } from "@/shared/types";
 
 export const CardPreview = ({
   img,
@@ -22,7 +11,7 @@ export const CardPreview = ({
   className,
   extra,
   people,
-}: Props) => {
+}: CardPreviewProps) => {
   return (
     <div className="card__preview">
       <div className="card__preview-main">

@@ -1,5 +1,5 @@
 import { footerMenuData, footerMenuButton } from "./footerData";
-import { FooterMenuData } from "@/shared/types";
+import { FooterMenuData } from "@/shared/interfaces";
 import { NavLink } from "react-router-dom";
 import { LinkImgArrow } from "../LinkImgArrow";
 

@@ -1,4 +1,4 @@
-import { Metrics, TeamMember, Advantages } from "@/shared/types"
+import { Metrics, TeamMember, Advantages } from "@/shared/interfaces"
 import image1 from '@/assets/images/team/Image.png'
 import image2 from '@/assets/images/team/Image-2.png'
 import image3 from '@/assets/images/team/Image-3.png'

@@ -1,13 +1,6 @@
-type Props = {
-    classNameTitle:string;
-    id:string;
-    classNameDesc:string;
-    title:string;
-    desc:string;
+import { TitleProps } from "@/shared/types";
 
-};
-
-export const Title = ({classNameTitle, id, classNameDesc,title,desc}: Props) => {
+export const Title = ({classNameTitle, id, classNameDesc,title,desc}: TitleProps) => {
   return (
     <>
       <h1 className={classNameTitle} id={id}>

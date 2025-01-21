@@ -3,7 +3,6 @@ import { TabsBody } from "./TabsBody";
 import { blogHomeData} from "./data";
 import { getPageButtons } from "@/shared/constants";
 
-
 type Props = {
   page: string;
 };

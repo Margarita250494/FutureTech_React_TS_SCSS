@@ -1,13 +1,7 @@
 import yellowArrow from "@/assets/icons/yellowArrow.svg";
-import React from "react";
+import { ImgArrowProps } from "@/shared/types";
 
-type Props = {
-    href:string;
-    className:string;
-    children:React.ReactNode;
-};
-
-export const LinkImgArrow = ({href, className,children}: Props) => {
+export const LinkImgArrow = ({href, className,children}: ImgArrowProps) => {
   return (
     <a href={href} className={className}>
       <span className="icon">

@@ -1,9 +1,7 @@
 import { CardCell } from "./CardCell";
-import { SectionData } from "@/shared/types";
+import { SectionDataProps } from "@/shared/types";
 import { classNames } from "@/shared/constants";
 import { CardPreview } from "./CardPreview";
-
-type Props = SectionData;
 
 export const SectionBody = ({
   img,
@@ -11,7 +9,7 @@ export const SectionBody = ({
   description,
   className,
   data,
-}: Props) => {
+}: SectionDataProps) => {
   
   return (
     <ul className="list">
