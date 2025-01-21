@@ -1,7 +1,5 @@
 import { TeamProps } from "@/shared/types";
 
-
-
 export const Team = ({ classname, people }: TeamProps) => {
   return (
     <div className={classname}>
