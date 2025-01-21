@@ -116,6 +116,8 @@ export type PersonCardProps = {
   imageSrc: string;
   name: string;
   department: string;
+  width:string;
+  height:string;
 };
 
 //scenes=>home=>hero=>Team.tsx

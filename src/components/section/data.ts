@@ -26,6 +26,13 @@ import { Repost } from "@/assets/icons/Repost";
 import eye from "@/assets/icons/resources/yellow-eye.svg";
 import details1 from "@/assets/images/resources/details-1.jpg";
 import details2 from "@/assets/images/resources/details-2.jpg";
+
+import review1 from "@/assets/images/reviews/review-1.png"
+import review2 from "@/assets/images/reviews/review-2.png"
+import review3 from "@/assets/images/reviews/review-3.png"
+import review4 from "@/assets/images/reviews/review-4.png"
+import review5 from "@/assets/images/reviews/review-5.png"
+import review6 from "@/assets/images/reviews/review-6.png"
 /**
  * Scene: HOME => feature/FeatureSection
  */
@@ -296,3 +303,49 @@ export const resourcesData: Array <Resource> = [
     },
   },
 ];
+
+export const reviewsData = [
+  {
+    img: review1,
+    name:"Sarah Thompson",
+    department:"San Francisco, USA",
+    blockquote:"The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.",
+    rating: 4,
+  },
+  {
+    img: review2,
+    name:"Raj Patel",
+    department:"Mumbai, India",
+    blockquote:"The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions.",
+    rating: 3,
+  },
+  {
+    img: review3,
+    name:"Emily Adams",
+    department:"London, UK",
+    blockquote:"The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care.",
+    rating: 5,
+  },
+  {
+    img: review4,
+    name:"Alan Jackson",
+    department:"Houston, USA",
+    blockquote:"The reports on space mining prospects have fueled my passion for space exploration. They provide a comprehensive view of what lies beyond Earth.",
+    rating: 3,
+  },
+  {
+    img: review5,
+    name:"Jessica Miller",
+    department:"Boston, USA",
+    blockquote:"The research papers on genomic breakthroughs have been a goldmine of information. They've shaped the direction of my research in genomics.",
+    rating: 5,
+  },
+  {
+    img: review6,
+    name:"Diego Lopez",
+    department:"Barcelona, Spain",
+    blockquote:"The ebooks on renewable energy strategies have given me the insights I needed to pivot our startup toward sustainability.",
+    rating: 4,
+
+  },
+]

@@ -2,20 +2,21 @@
 @use '../variables';
 
 .person-card{
+    --imageSize:#{rem(80)};
+
+
     display: flex;
     align-items: center;
     column-gap: fluid(16,8);
 
-    &__image{
-        width: rem(80);
-        border-radius: 50%;
-        background-color: var(--color-dark-15);
+    @include laptop{
+        --imageSize:#{rem(60)};
     }
 
-    @include laptop{
-        &__image{
-            width: rem(60);
-        }
+    &__image{
+        width: var(--imageSize);
+        border-radius: 50%;
+        background-color: var(--color-dark-15);
     }
 
     &__body{

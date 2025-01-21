@@ -1,0 +1,64 @@
+@use '../helpers' as *;
+@use '../variables';
+
+.bordered-grid{
+    --columns:1;
+    --itemPaddingY:#{fluid(80,40)};
+    
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+
+    &--2-cols{
+        --columns:2;
+    }
+
+    &--3-cols{
+        --columns:3;
+        --itemPaddingX:#{rem(50)};
+
+        @include laptop{
+            --itemPaddingX:#{rem(40)};
+        }
+
+        @include tablet{
+            --columns:1;
+
+            .bordered-grid__item:not(:last-child){
+                border-bottom: var(--border);
+            }
+        }
+
+        @include tablet-above{
+            .bordered-grid__item{
+                /*
+                    Elements from first and second column
+                */
+                &:nth-child(3n-2),
+                &:nth-child(3n-1){
+                    padding-right: var(--itemPaddingX);
+                    border-right: var(--border);
+                }
+    
+                /*
+                    Elements from secon column
+                */
+                &:nth-child(3n-1){
+                    @include full-vw-centered-line(bottom);
+                }
+                /*
+                    Elements from second and third columns
+                */
+                &:nth-child(3n),
+                &:nth-child(3n-1){
+                    padding-left: var(--itemPaddingX);
+                }
+            }
+        }
+        
+    }
+
+    &__item{
+        padding-block: var(--itemPaddingY);
+    }
+}

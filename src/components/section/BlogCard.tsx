@@ -13,10 +13,15 @@ export const BlogCard = ({
 }: BlogCardProps) => {
   return (
     <article className="blog-card container">
+      <div className="blog-card__author person-card">
       <PersonCard 
         imageSrc={author.imageSrc}
         name={author.name}
-        department={author.department}/>
+        department={author.department}
+        width="80"
+        height="80"
+      />
+      </div>
       <div className="blog-card__body">
         <time dateTime={dateTime} className="blog-card__date h6">
           {date}
