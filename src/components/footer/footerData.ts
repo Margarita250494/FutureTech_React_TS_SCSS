@@ -1,7 +1,6 @@
-import { TwitterIcon } from "@/assets/icons/TwitterIcon"
+import { TwitterIcon, LinkedInIcon, MediumIcon } from "@/assets/icons/icons";
 import { FooterMenuData, SocialLink } from "@/shared/interfaces"
-import { LinkedInIcon } from "@/assets/icons/LinkedInIcon"
-import { MediumIcon } from "@/assets/icons/MediumIcon"
+
 
 //Footer.tsx => FooterMenu.tsx
 export const footerMenuData: FooterMenuData[] = [

@@ -1,4 +1,3 @@
-
 import { CardContainer } from "@/components/section/CardContainer";
 import { resourcesData } from "@/components/section/data";
 import { Header } from "@/components/section/Header";

@@ -10,15 +10,11 @@ export const SectionBody = ({
   className,
   data,
 }: SectionDataProps) => {
-  
   return (
     <ul className="list">
       <li className="list__item">
         <div className="card container">
-          <CardPreview
-          img={img}
-          title={title}
-          description={description}/>
+          <CardPreview img={img} title={title} description={description} />
           <div className="card__body">
             <div className={classNames("card__grid", className)}>
               {data.map((item, index) => (

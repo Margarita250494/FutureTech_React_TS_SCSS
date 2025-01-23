@@ -89,6 +89,8 @@ export type CardExtraProps = {
   title: string;
   description: string;
   src: string;
+  width:string;
+  height:string;
 };
 
 //components => section => CardPreview.tsx

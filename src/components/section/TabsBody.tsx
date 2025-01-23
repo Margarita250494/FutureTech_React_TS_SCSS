@@ -5,7 +5,6 @@ import { BlogCard } from "./BlogCard";
     blogs: BlogCardProps[];
   };
 
-
 export const TabsBody = ({ blogs }: TabsBodyProps) => {
   return (
     <div className="tabs__body">

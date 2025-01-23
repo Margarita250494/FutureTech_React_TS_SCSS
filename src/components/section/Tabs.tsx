@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TabsBody } from "./TabsBody";
-import { blogHomeData} from "./data";
+import { blogHomeData } from "./data";
 import { getPageButtons } from "@/shared/constants";
 
 type Props = {
@@ -18,11 +18,10 @@ export const Tabs = ({ page }: Props) => {
     activeButton === "All"
       ? blogHomeData
       : blogHomeData.filter((blog) => blog.author.department === activeButton);
-  
-  const handleClick = (title:string) => {
+
+  const handleClick = (title: string) => {
     setActiveButton(title);
-  }
-  
+  };
 
   return (
     <div className="section__body tabs">
@@ -45,7 +44,7 @@ export const Tabs = ({ page }: Props) => {
               id={button.title}
               role="tab"
               aria-controls={button.ariaControls}
-              tabIndex={activeButton === button.title ? 0 : -1} 
+              tabIndex={activeButton === button.title ? 0 : -1}
               onClick={() => handleClick(button.title)}
             >
               {button.title}
@@ -53,7 +52,7 @@ export const Tabs = ({ page }: Props) => {
           ))}
         </div>
       </header>
-      <TabsBody blogs={filteredBlogs}/>
+      <TabsBody blogs={filteredBlogs} />
     </div>
   );
 };

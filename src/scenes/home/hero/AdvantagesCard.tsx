@@ -14,7 +14,7 @@ export const AdvantagesCard = () => {
               height="50"
               loading="lazy"
             />
-            <a href="/" className="advantage-card__link">
+            <a href="/" className="advantage-card__link circle-icon">
               <h3 className="advantage-card__title h6">{advantage.title}</h3>
               <p className="advantage-card__subtitle">{advantage.subtitle}</p>
             </a>

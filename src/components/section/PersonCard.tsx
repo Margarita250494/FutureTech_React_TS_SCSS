@@ -1,6 +1,12 @@
 import { PersonCardProps } from "@/shared/types";
 
-export const PersonCard = ({ imageSrc, name, department, width,height }: PersonCardProps) => {
+export const PersonCard = ({
+  imageSrc,
+  name,
+  department,
+  width,
+  height,
+}: PersonCardProps) => {
   return (
     <>
       <img

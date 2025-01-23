@@ -1,4 +1,4 @@
-import { CardExtraProps,CardProps } from "@/shared/types";
+import { CardExtraProps, CardProps } from "@/shared/types";
 
 export const CardCell = ({ data }: CardProps) => {
   return (
@@ -11,7 +11,7 @@ export const CardCell = ({ data }: CardProps) => {
   );
 };
 
-export const CardCellExtra = ({ title, description, src }: CardExtraProps) => {
+export const CardCellExtra = ({ title, description, src, width, height }: CardExtraProps) => {
   return (
     <>
       <div className="card__cell">
@@ -27,8 +27,8 @@ export const CardCellExtra = ({ title, description, src }: CardExtraProps) => {
           className="card__cell-image"
           src={src}
           alt=""
-          width="917"
-          height="332"
+          width={width}
+          height={height}
           loading="lazy"
         />
       </div>

@@ -1,6 +1,5 @@
-
 import { FooterExtra } from "./FooterExtra"
-import {FooterMenu} from "./FooterMenu"
+import { FooterMenu } from "./FooterMenu"
 
 export  const Footer = () => {
   return (

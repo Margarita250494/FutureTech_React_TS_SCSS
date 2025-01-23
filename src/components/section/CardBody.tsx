@@ -14,6 +14,8 @@ export const CardBody = ({
           title={title}
           description={description}
           src={src}
+          width="917"
+          height="332"
         />
         {tiles.map((tile, index) => (
           <div key={index} className={tile.className}>

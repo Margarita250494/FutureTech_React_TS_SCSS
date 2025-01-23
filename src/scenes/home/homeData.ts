@@ -1,4 +1,4 @@
-import { Metrics, TeamMember, Advantages } from "@/shared/interfaces"
+import { Metrics, TeamMember, Advantages, Section } from "@/shared/interfaces"
 import { image1,image2,image3,image4 } from "@/assets/images/team/team"
 import { icon1,icon2,icon3 } from "@/assets/icons/adventages/adventages"
 
@@ -64,4 +64,20 @@ export const advantages: Array <Advantages> = [
         subtitle:"Worldwide Impact",
         detail: "2 million monthly readers"
     },
+]
+
+export const aboutList: Array <Section> = [
+    {
+        title:"Resource Access",
+        description:"Visitors can access a wide range of resources, including ebooks, whitepapers, reports."
+    },
+    {
+        title:"Community Forum",
+        description:"Join our active community forum to discuss industry trends, share insights, and collaborate with peers."
+    },
+    {
+        title:"Tech Events",
+        description:"Stay updated on upcoming tech events, webinars, and conferences to enhance your knowledge."
+    },
+
 ]
