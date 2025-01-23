@@ -5,6 +5,7 @@ export const BlogSection = () => {
   return (
     <section className="section" aria-labelledby="blog-title">
         <Header
+            to="/blogs"
             subtitle="A Knowledge Treasure Trove"
             id="blog-title"
             title="Explore FutureTech's In-Depth Blog Posts"

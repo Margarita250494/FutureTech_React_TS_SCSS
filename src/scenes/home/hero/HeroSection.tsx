@@ -31,7 +31,7 @@ export const HeroSection = () => {
               Over 1,000 articles on emerging tech trends and breakthroughs.
             </p>
           </div>
-          <LinkImgArrow href="/" className="resources-preview__button button">
+          <LinkImgArrow href="/resources" className="resources-preview__button button">
             Explore Resources
           </LinkImgArrow>
         </div>

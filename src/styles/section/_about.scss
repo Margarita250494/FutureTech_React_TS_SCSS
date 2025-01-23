@@ -81,6 +81,8 @@
         background-color: var(--color-dark);
         gap: rem(20);
 
+
+
         @include laptop{
             padding: rem(10);
             border-radius: rem(10);
@@ -91,4 +93,6 @@
             grid-template-columns: repeat(3, 1fr);
         }
     }
+
+    
 }

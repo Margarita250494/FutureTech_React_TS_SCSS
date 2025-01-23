@@ -1,7 +1,11 @@
-//type Props = {}
-
+import { Helmet } from "react-helmet-async"
+import { HeroAltSection } from "./hero/HeroAltSection"
 export const News = () => {
     return (
-      <h1>Welcome to the News Page</h1>
+      <>
+      <Helmet><title>Future Tech | News</title></Helmet>
+      <HeroAltSection/>
+      </>
+      
     )
   }

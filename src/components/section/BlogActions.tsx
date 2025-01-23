@@ -10,7 +10,6 @@ export const BlogActions = ({ actions }: { actions: ActionProps[] }) => {
   };
 
   return (
-    <div className="blog-card__actions actions">
       <ul className="blog-actions__list">
         {actions.map((action,index) => (
           <li className="blog-actions__item" key={index}>
@@ -29,6 +28,5 @@ export const BlogActions = ({ actions }: { actions: ActionProps[] }) => {
           </li>
         ))}
       </ul>
-    </div>
   );
 };

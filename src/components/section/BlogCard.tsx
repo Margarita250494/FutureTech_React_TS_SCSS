@@ -34,7 +34,9 @@ export const BlogCard = ({
             </p>
           </div>
         </div>
+        <div className="blog-card__actions actions">
         <BlogActions actions={actions}/>
+        </div>
       </div>
       <LinkImgArrow
         href="/"

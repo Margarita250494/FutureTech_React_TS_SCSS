@@ -6,6 +6,7 @@ export const FeatureSection = () => {
   return (
     <section className="section" aria-labelledby="features-title">
       <Header
+        to="/"
         id="features-title"
         subtitle="Unlock the Power of"
         title="FutureTech Features"

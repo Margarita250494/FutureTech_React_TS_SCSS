@@ -112,3 +112,25 @@ export interface Review{
     blockquote:string,
     rating: number,
 }
+
+export interface News{
+    id:number,
+    isMain: boolean;
+    img: string;
+    width: string;
+    height: string;
+    title: string;
+    description: string;
+    summary?: {
+        key:string,
+        value:string,
+        datetime?:string,
+        isTime?:boolean
+    }[];
+    actions: {
+        title: string;
+        ariaLabel: string;
+        icon: () => JSX.Element;
+        info: string;
+    }[];
+}

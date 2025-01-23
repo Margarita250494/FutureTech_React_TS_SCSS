@@ -111,6 +111,8 @@ export type SectionHeader = {
   subtitle: string;
   title: string;
   link?: string;
+  to: string;
+  
 };
 
 //components => section => PersonCard.tsx
@@ -127,3 +129,31 @@ export type TeamProps = {
   classname: string;
   people: TeamMember[]; 
 };
+
+
+//components => section => HeroAltHeader.tsx
+export type HeroAltHeaderProps = {
+  id:string,
+  title:string,
+  spanTitle:string,
+  description:string
+}
+
+//scenes => news => NewsCard.tsx
+type SummaryProps = {
+  key:string,
+  value:string,
+  datetime?:string,
+  isTime?:boolean
+}
+
+export type NewsCardProps = {
+  isMain: boolean;
+  image: string;
+  width: string;
+  height: string;
+  title: string;
+  description: string;
+  summary?: SummaryProps[];
+  actions: ActionProps[];
+}

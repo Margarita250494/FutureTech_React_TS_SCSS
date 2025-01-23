@@ -1,7 +1,7 @@
 import { LinkImgArrow } from "../LinkImgArrow";
 import { SectionHeader } from "@/shared/types";
 
-export const Header = ({ id, subtitle, title, link }: SectionHeader) => {
+export const Header = ({ id, subtitle, title, link, to }: SectionHeader) => {
   return (
     <header className="section__header">
       <div className="section__header-inner container">
@@ -13,7 +13,7 @@ export const Header = ({ id, subtitle, title, link }: SectionHeader) => {
         </div>
         {link && (
           <LinkImgArrow
-            href="/"
+            href={to}
             className="section__link button"
             children={link}
           />

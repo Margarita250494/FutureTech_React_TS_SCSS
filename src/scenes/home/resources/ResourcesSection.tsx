@@ -6,6 +6,7 @@ export const ResourcesSection = () => {
   return (
     <section className="section" aria-labelledby="resources-title">
       <Header
+        to="/resources"
         id="resources-title"
         subtitle="Your Gateway to In-Depth Information"
         title="Unlock Valuable Knowledge with FutureTech's Resources"
