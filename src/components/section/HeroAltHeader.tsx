@@ -5,7 +5,7 @@ export const HeroAltHeader = ({id,title,spanTitle,description}:HeroAltHeaderProp
       <header className="hero-alt__header">
         <div className="hero-alt__header-inner container">
           <h1 className="hero-alt__title" id={id}>
-            {title}
+            {title}&nbsp;
             <span className="hero-alt__title-hidden-part">
             {spanTitle}
             </span>
