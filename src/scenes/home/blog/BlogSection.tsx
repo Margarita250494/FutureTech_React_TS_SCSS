@@ -1,5 +1,7 @@
+import { blogHomeData } from "@/components/section/data"
 import { Header } from "@/components/section/Header"
 import { Tabs } from "@/components/section/Tabs"
+
 
 export const BlogSection = () => {
   return (
@@ -11,7 +13,7 @@ export const BlogSection = () => {
             title="Explore FutureTech's In-Depth Blog Posts"
             link="View All Blogs"
         />
-        <Tabs page="home"/>
+        <Tabs page="home" blogs={blogHomeData}/>
     </section>
   )
 }

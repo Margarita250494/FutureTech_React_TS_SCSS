@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { TabsBody } from "./TabsBody";
-import { blogHomeData } from "./data";
 import { getPageButtons } from "@/shared/constants";
+import { BlogCardProps } from "@/shared/types";
 
 type Props = {
   page: string;
+  blogs:BlogCardProps[]
 };
 
-export const Tabs = ({ page }: Props) => {
+export const Tabs = ({ page, blogs }: Props) => {
   const pageButtons = getPageButtons(page);
 
   const [activeButton, setActiveButton] = useState<string>(
@@ -16,8 +17,8 @@ export const Tabs = ({ page }: Props) => {
 
   const filteredBlogs =
     activeButton === "All"
-      ? blogHomeData
-      : blogHomeData.filter((blog) => blog.author.department === activeButton);
+      ? blogs
+      : blogs.filter((blog) => blog.author.department === activeButton);
 
   const handleClick = (title: string) => {
     setActiveButton(title);

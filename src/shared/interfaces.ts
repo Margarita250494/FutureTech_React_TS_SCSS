@@ -134,3 +134,11 @@ export interface News{
         info: string;
     }[];
 }
+
+export interface Video {
+    video:string,
+    poster:string,
+    duration:string,
+    title: string,
+    description:string
+}

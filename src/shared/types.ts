@@ -157,3 +157,11 @@ export type NewsCardProps = {
   summary?: SummaryProps[];
   actions: ActionProps[];
 }
+
+export type VideoCardProps = {
+  video: string;
+  poster: string;
+  duration: string;
+  title: string;
+  description: string;
+}
