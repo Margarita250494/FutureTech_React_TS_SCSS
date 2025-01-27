@@ -7,19 +7,6 @@
     align-items: center;
     column-gap: rem(10);
 
-    
-    /*&::after{
-        --size:#{rem(24)};
-
-        @include square(var(--size));
-
-        content: '';
-        flex-shrink: 0;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }*/
-
     &--yellow-arrow{
         --size:#{rem(24)};
 
@@ -29,7 +16,8 @@
             --size:#{rem(20)};
         }
     }
-    
 
-    
+    &--gray-arrow-down{
+        
+    }
 }

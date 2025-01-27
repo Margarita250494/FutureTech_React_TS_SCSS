@@ -4,6 +4,8 @@
 @use 'utils';
 @use 'globals';
 
+@use 'blog/expandable-content';
+
 @use 'header/icon';
 @use 'header/logo';
 @use 'header/button';
@@ -42,6 +44,11 @@
 @use 'news/news';
 @use 'news/video-player';
 @use 'news/video-card';
+
+@use 'blog/table-of-contents';
+@use 'blog/blog-details';
+
+
 
 
 
