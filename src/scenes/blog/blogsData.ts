@@ -1,6 +1,7 @@
 import { LikeIcon, Repost, WatchIcon } from "@/assets/icons/icons";
+import { Blog } from "@/shared/interfaces";
 
-export const blogData = [
+export const blogData: Array <Blog> = [
   {
     introTitle: "Introduction",
     introInfo:

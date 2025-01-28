@@ -140,12 +140,23 @@ export type HeroAltHeaderProps = {
 }
 
 //scenes => news => NewsCard.tsx
-type SummaryProps = {
-  key:string,
-  value:string,
-  datetime?:string,
-  isTime?:boolean
-}
+export type SummaryProps =
+  | {
+      key: string; 
+      value: string;
+      dateTime?: string;
+      isTime?: boolean;
+      contentsTitle?: undefined; 
+      contentsList?: undefined;
+    }
+  | {
+      contentsTitle: string; 
+      contentsList: { content: string }[];
+      key?: undefined; 
+      value?: undefined;
+      dateTime?: undefined;
+      isTime?: undefined;
+    };
 
 export type NewsCardProps = {
   isMain: boolean;
@@ -164,4 +175,33 @@ export type VideoCardProps = {
   duration: string;
   title: string;
   description: string;
+}
+
+export type ButtonIconProps = {
+  buttonClassName: string;
+  onClick?: () => void;
+  text: string;
+  imgClassName: string;
+  src:string;
+}
+
+export type BlogIntroProps = {
+  divClassName: string;
+  h2ClassName:string;
+  title:string;
+  intro:string;
+}
+
+export type BlogInfoProps = {
+  actions: ActionProps[];
+  summary: SummaryProps[];
+}
+
+export type BlogMainProps = {
+  mainTitle: string;
+  mainInfo: { [key: string]: string };
+  subMainTitle: string;
+  subMainInfo: { [key: string]: string };
+  isExpanded: boolean;
+  onToggle: () => void;
 }

@@ -1,6 +1,4 @@
-import { BlogBody } from "./BlogBody"
-import { BlogNews } from "./BlogNews"
-
+import { BlogBody, BlogNews } from "./blogImport"
 
 export const BlogDetails = () => {
   return (

@@ -1,5 +1,6 @@
 import { LinkImgArrow } from "@/components/LinkImgArrow";
 import { BlogActions } from "@/components/section/BlogActions";
+import { SummaryList } from "@/components/section/SummaryList";
 import { NewsCardProps} from "@/shared/types";
 
 export const NewsCard = ({
@@ -30,20 +31,7 @@ export const NewsCard = ({
       </div>
       {summary ? (
         <div className="news-card__summary summary">
-          <dl className="summary__list">
-            {summary.map((item, index) => (
-              <div key={index} className="summary__item">
-                <dt className="summary__key">{item.key}</dt>
-                <dd className="summary__value">
-                  {item.isTime ? (
-                    <time dateTime={item.datetime}>{item.value}</time>
-                  ) : (
-                    item.value
-                  )}
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <SummaryList items={summary}/>
         </div>
       ) : (
         ""
