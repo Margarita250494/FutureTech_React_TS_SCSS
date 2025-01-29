@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 export const useIsMobile = (query: string): boolean => {
   const [isMobile, setIsMobile] = useState(false);
@@ -32,3 +34,13 @@ export const useBodyNoScroll = (isActive:boolean) => {
     }
   }, [isActive])
 }
+
+export const ScrollToTop = () => {
+  const location = useLocation(); // Хук для отслеживания текущего маршрута
+  useEffect(() => {
+    // Прокрутка к верхней части страницы при изменении маршрута
+    window.scrollTo(0, 0);
+  }, [location]); // Срабатывает при изменении маршрута
+
+  return null; // Этот компонент ничего не отображает
+};

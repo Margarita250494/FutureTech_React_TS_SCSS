@@ -1,7 +1,5 @@
 import { blogHomeData } from "@/components/section/data"
-import { Header } from "@/components/section/Header"
-import { Tabs } from "@/components/section/Tabs"
-
+import { Header,Tabs } from "@/components/section/sectionImport"
 
 export const BlogSection = () => {
   return (

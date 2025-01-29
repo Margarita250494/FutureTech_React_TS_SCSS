@@ -1,7 +1,6 @@
 import { LinkImgArrow } from "@/components/LinkImgArrow";
-import { BlogActions } from "@/components/section/BlogActions";
-import { SummaryList } from "@/components/section/SummaryList";
-import { NewsCardProps} from "@/shared/types";
+import { BlogActions, Description, SummaryList } from "@/components/section/sectionImport";
+import { NewsCardProps } from "@/shared/types";
 
 export const NewsCard = ({
   isMain,
@@ -23,15 +22,17 @@ export const NewsCard = ({
         height={height}
         loading="lazy"
       />
-      <div className="news-card__body">
-        <h2 className={`news-card__title ${isMain ? "" : "h6"}`}>{title}</h2>
-        <div className="news-card__description">
-          <p>{description}</p>
-        </div>
-      </div>
+      <Description
+        bodyClassName="news-card__body"
+        h2={true}
+        titleClassName={`news-card__title ${isMain ? "" : "h6"}`}
+        title={title}
+        descClassName="news-card__description"
+        desc={description}
+      />
       {summary ? (
         <div className="news-card__summary summary">
-          <SummaryList items={summary}/>
+          <SummaryList items={summary} />
         </div>
       ) : (
         ""

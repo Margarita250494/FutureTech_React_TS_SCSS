@@ -205,3 +205,14 @@ export type BlogMainProps = {
   isExpanded: boolean;
   onToggle: () => void;
 }
+
+export type DescriptionProps = {
+  bodyClassName: string;
+  titleClassName: string;
+  h2?: boolean;
+  h3?: boolean;
+  h4?: boolean;
+  title: string;
+  descClassName: string;
+  desc: string;
+}

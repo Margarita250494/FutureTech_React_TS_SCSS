@@ -1,5 +1,4 @@
-import { Header } from "@/components/section/Header";
-import { SectionBody } from "@/components/section/SectionBody";
+import { SectionBody,Header } from "@/components/section/sectionImport";
 import {featureSectionsData} from "@/components/section/data";
 
 export const FeatureSection = () => {

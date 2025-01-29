@@ -1,17 +1,18 @@
-import { Helmet } from "react-helmet-async"
-import { HeroAltSection } from "./hero/HeroAltSection"
-import { NewsBlogSection } from "./blog/NewsBlogSection"
-import { FeaturedVideosSection } from "./featured videos/FeaturedVideosSection"
-import { AboutSection } from "../home/about/AboutSection"
+import { Helmet } from "react-helmet-async";
+import { HeroAltSection,NewsBlogSection,FeaturedVideosSection,AboutSection } from "./newsImport";
+import { motion } from "framer-motion";
+import { fadeAnimation } from "@/shared/constants";
+
 export const News = () => {
-    return (
-      <>
+  return (
+    <motion.section
+      {...fadeAnimation}
+    >
       <Helmet><title>Future Tech | News</title></Helmet>
-      <HeroAltSection/>
-      <NewsBlogSection/>
-      <FeaturedVideosSection/>
-      <AboutSection/>
-      </>
-      
-    )
-  }
+      <HeroAltSection />
+      <NewsBlogSection />
+      <FeaturedVideosSection />
+      <AboutSection />
+    </motion.section>
+  );
+};

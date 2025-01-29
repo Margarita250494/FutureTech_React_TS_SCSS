@@ -1,7 +1,6 @@
 import { BlogCardProps } from "@/shared/types";
-import { PersonCard } from "./PersonCard";
-import { BlogActions } from "./BlogActions";
 import { LinkImgArrow } from "../LinkImgArrow";
+import { Description, PersonCard,BlogActions } from "./sectionImport";
 
 export const BlogCard = ({
   author,
@@ -9,33 +8,33 @@ export const BlogCard = ({
   date,
   title,
   description,
-  actions
+  actions,
 }: BlogCardProps) => {
   return (
     <article className="blog-card container">
       <div className="blog-card__author person-card">
-      <PersonCard 
-        imageSrc={author.imageSrc}
-        name={author.name}
-        department={author.department}
-        width="80"
-        height="80"
-      />
+        <PersonCard
+          imageSrc={author.imageSrc}
+          name={author.name}
+          department={author.department}
+          width="80"
+          height="80"
+        />
       </div>
       <div className="blog-card__body">
         <time dateTime={dateTime} className="blog-card__date h6">
           {date}
         </time>
-        <div className="blog-card__info">
-          <h4 className="blog-card__title">{title}</h4>
-          <div className="blog-card__description">
-            <p>
-              {description}
-            </p>
-          </div>
-        </div>
+        <Description
+          bodyClassName="blog-card__info"
+          h4={true}
+          titleClassName="blog-card__title"
+          title={title}
+          descClassName="blog-card__description"
+          desc={description}
+        />
         <div className="blog-card__actions actions">
-        <BlogActions actions={actions}/>
+          <BlogActions actions={actions} />
         </div>
       </div>
       <LinkImgArrow

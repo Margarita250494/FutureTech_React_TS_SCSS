@@ -1,4 +1,5 @@
 import { PlayButton } from "@/assets/images/news/PlayButton";
+import { Description } from "@/components/section/Description";
 import { VideoCardProps } from "@/shared/types";
 import { useRef, useState } from "react";
 
@@ -50,12 +51,13 @@ export const VideoCard = ({
           <div className="video-player__duration">{duration}</div>
         </div>
       </div>
-      <div className="video-card__body">
-        <h3 className="video-card__title h5">{title}</h3>
-        <div className="video-card__description">
-          <p>{description}</p>
-        </div>
-      </div>
+      <Description
+      bodyClassName="video-card__body"
+      h3={true}
+      titleClassName="video-card__title h5"
+      title={title}
+      descClassName="video-card__description"
+      desc={description}/>
     </div>
   );
 };

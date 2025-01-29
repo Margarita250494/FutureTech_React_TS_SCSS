@@ -1,19 +1,18 @@
 import "@/styles/main.css";
 import { Header } from "./components/header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./scenes/home/Home";
-import { News } from "./scenes/news/News";
-import { Podcasts } from "./scenes/podcasts/Podcasts";
-import { Resources } from "./scenes/resources/Resources";
+import { Home, News,Podcasts,Resources,Contact,Blogs } from "@/scenes/scenesImport"
 import { Footer } from "./components/footer/Footer";
-import { Blogs } from "./scenes/blog/Blogs";
-import { Contact } from "./scenes/contact/Contact";
 import { HelmetProvider } from "react-helmet-async";
+import { ScrollToTop } from "./shared/hooks";
+
 
 export const App = () => {
+  
   return (
     <HelmetProvider>
       <Router>
+      <ScrollToTop />
         <Header />
         <main>
           <Routes>

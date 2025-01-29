@@ -1,8 +1,5 @@
-import { BlogActions } from "@/components/section/BlogActions";
-import { SummaryList } from "@/components/section/SummaryList";
+import { BlogActions,SummaryList } from "@/components/section/sectionImport";
 import { BlogInfoProps } from "@/shared/types";
-
-
 
 export const BlogInfo = ({actions,summary}:BlogInfoProps) => {
   return (

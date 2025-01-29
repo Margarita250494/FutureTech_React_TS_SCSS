@@ -1,8 +1,4 @@
-import { Title } from "@/components/Title";
-import { Metrics } from "./Metrics";
-import { Team } from "./Team";
-import { LinkImgArrow } from "@/components/LinkImgArrow";
-import { AdvantagesCard } from "./AdvantagesCard";
+import { Title,Metrics,Team,LinkImgArrow,AdvantagesCard } from "@/components/section/sectionImport";
 import { team } from "../homeData";
 
 export const HeroSection = () => {

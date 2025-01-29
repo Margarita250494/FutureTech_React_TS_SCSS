@@ -1,6 +1,5 @@
 import { reviewsData } from "@/components/section/data";
-import { PersonCard } from "@/components/section/PersonCard";
-import { RatingViewStar } from "@/components/section/RatingViewStar";
+import { PersonCard, RatingViewStar } from "@/components/section/sectionImport";
 
 export const ReviewsBody = () => {
   return (

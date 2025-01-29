@@ -1,6 +1,5 @@
-import { CardContainer } from "@/components/section/CardContainer";
+import { CardContainer,Header } from "@/components/section/sectionImport";
 import { resourcesData } from "@/components/section/data";
-import { Header } from "@/components/section/Header";
 
 export const ResourcesSection = () => {
   return (

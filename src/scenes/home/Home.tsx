@@ -1,15 +1,14 @@
 import { Helmet } from "react-helmet-async";
-import { AboutSection } from "./about/AboutSection";
-import { BlogSection } from "./blog/BlogSection";
-import { FeatureSection } from "./feature/FeatureSection";
-import { HeroSection } from "./hero/HeroSection";
-import { ResourcesSection } from "./resources/ResourcesSection";
-import { ReviewsSection } from "./reviews/ReviewsSection";
+import { AboutSection,BlogSection,FeatureSection,HeroSection,ResourcesSection,ReviewsSection } from "./homeImport";
+import { motion } from "framer-motion";
+import { fadeAnimation } from "@/shared/constants";
 
 
 export const Home = () => {
   return (
-    <>
+    <motion.section 
+      {...fadeAnimation}
+    >
       <Helmet><title>Future Tech | Home</title></Helmet>
       <HeroSection />
       <FeatureSection />
@@ -17,6 +16,7 @@ export const Home = () => {
       <ResourcesSection />
       <ReviewsSection />
       <AboutSection/>
-    </>
+      
+    </motion.section>
   );
 };
