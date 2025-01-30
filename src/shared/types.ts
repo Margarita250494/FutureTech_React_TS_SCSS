@@ -190,6 +190,9 @@ export type BlogIntroProps = {
   h2ClassName:string;
   title:string;
   intro:string;
+  reverse:boolean;
+  pClassName?:string;
+  id?:string;
 }
 
 export type BlogInfoProps = {

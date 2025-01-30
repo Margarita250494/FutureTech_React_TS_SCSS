@@ -1,5 +1,6 @@
 import logo from "@/assets/images/about/Logo.svg";
 import { AboutList } from "./AboutList";
+import { Intro } from "@/components/section/Intro";
 
 export const AboutSection = () => {
   return (
@@ -14,12 +15,14 @@ export const AboutSection = () => {
             height="150"
             loading="lazy"
           />
-          <div className="about__info">
-            <p className="about__subtitle tag">Learn, Connect, and Innovate</p>
-            <h2 className="about__title" id="about-title">
-              Be Part of the Future Tech Revolution
-            </h2>
-          </div>
+          <Intro
+          divClassName="about__info"
+          reverse={true}
+          pClassName="about__subtitle tag"
+          intro="Learn, Connect, and Innovate"
+          h2ClassName="about__title"
+          id="about-title"
+          title="Be Part of the Future Tech Revolution"/>
           <div className="about__description">
             <p>
               Immerse yourself in the world of future technology. Explore our

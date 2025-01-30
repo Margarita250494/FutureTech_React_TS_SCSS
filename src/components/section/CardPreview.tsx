@@ -1,6 +1,7 @@
 import { LinkImgArrow } from "../LinkImgArrow";
 import { Team } from "@/scenes/home/hero/Team";
 import { CardPreviewProps } from "@/shared/types";
+import { Description } from "./Description";
 
 export const CardPreview = ({
   img,
@@ -23,12 +24,13 @@ export const CardPreview = ({
           height="80"
           loading="lazy"
         />
-        <div className="card__preview-info">
-          <h3 className="card__preview-title">{title}</h3>
-          <div className="card__preview-description">
-            <p>{description}</p>
-          </div>
-        </div>
+        <Description
+        bodyClassName="card__preview-info"
+        h3={true}
+        titleClassName="card__preview-title"
+        title={title}
+        descClassName="card__preview-description"
+        desc={description}/>
         {link ? (
           <LinkImgArrow
             href={href || "#"}

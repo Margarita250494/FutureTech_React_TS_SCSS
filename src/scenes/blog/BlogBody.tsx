@@ -1,6 +1,6 @@
 import { blogData } from "./blogsData";
 import { useState } from "react";
-import {BlogMain, BlogIntro,BlogInfo} from "./blogImport"
+import {BlogMain, Intro,BlogInfo} from "./blogImport"
 
 export const BlogBody = () => {
   const [isClicked, setIsClicked] = useState<number | null>(null);
@@ -13,11 +13,12 @@ export const BlogBody = () => {
       {blogData.map((blog, index) => (
         <div key={index} className="blog-details__body-inner container">
           <div className="blog-details__content">
-            <BlogIntro
+            <Intro
             divClassName="blog-details__intro full-vw-line-custom full-vw-line-custom--bottom full-vw-line-custom--left"
             h2ClassName="h6"
             title={blog.introTitle}
             intro={blog.introInfo}
+            reverse={false}
             />
             <BlogMain
               mainTitle={blog.mainTitle}

@@ -1,16 +1,19 @@
 import { LinkImgArrow } from "../LinkImgArrow";
 import { SectionHeader } from "@/shared/types";
+import { Intro } from "./Intro";
 
 export const Header = ({ id, subtitle, title, link, to }: SectionHeader) => {
   return (
     <header className="section__header">
       <div className="section__header-inner container">
-        <div className="section__header-info">
-          <p className="section__subtitle tag">{subtitle}</p>
-          <h2 className="section__title" id={id}>
-            {title}
-          </h2>
-        </div>
+        <Intro
+        divClassName="section__header-info"
+        reverse={true}
+        pClassName="section__subtitle tag"
+        intro={subtitle}
+        h2ClassName="section__title"
+        id={id}
+        title={title}/>
         {link && (
           <LinkImgArrow
             href={to}

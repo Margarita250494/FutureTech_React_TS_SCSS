@@ -1,4 +1,4 @@
-export { BlogIntro } from "./BlogIntro";
+export { Intro } from "../../components/section/Intro";
 export { BlogInfo } from "./BlogInfo";
 export { BlogMain } from "./BlogMain";
 export { BlogNews } from "./BlogNews";
