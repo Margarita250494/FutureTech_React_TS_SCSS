@@ -18,7 +18,7 @@ export const ReviewsBody = () => {
                 />
               </div>
               <div className="review-card__body tile">
-                <RatingViewStar rating={review.rating} />
+                <RatingViewStar rating={review.rating} className="review-card__rating-view rating-view"/>
                 <blockquote className="review-card__description">
                   <p>{review.blockquote}</p>
                 </blockquote>

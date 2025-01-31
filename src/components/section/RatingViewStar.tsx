@@ -1,13 +1,14 @@
 interface RatingViewStarProps {
   rating: number;
+  className: string;
 }
 
-export const RatingViewStar = ({ rating }: RatingViewStarProps) => {
+export const RatingViewStar = ({ rating, className }: RatingViewStarProps) => {
   const totalStars = 5;
 
   return (
     <div
-      className="review-card__rating-view rating-view"
+      className={className}
       aria-label={`Rating ${rating} star${rating > 1 ? "s" : ""}`}
       title={`Rating ${rating} star${rating > 1 ? "s" : ""}`}
     >
@@ -20,3 +21,4 @@ export const RatingViewStar = ({ rating }: RatingViewStarProps) => {
     </div>
   );
 };
+

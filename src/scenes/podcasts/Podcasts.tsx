@@ -1,6 +1,8 @@
+
 import { fadeAnimation } from "@/shared/constants";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import { PodcastsSection } from "./PodcastsSection";
 
 
 export const Podcasts = () => {
@@ -12,7 +14,7 @@ export const Podcasts = () => {
       <motion.section
         {...fadeAnimation}
       >
-        <h1>Welcome to the Podcasts Page</h1>
+        <PodcastsSection/>
       </motion.section>
     </>
   );
