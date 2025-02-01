@@ -12,3 +12,5 @@ export {LinkImgArrow} from '../LinkImgArrow';
 export {AdvantagesCard} from '@/scenes/home/hero/AdvantagesCard';
 export {CardContainer} from './CardContainer';
 export {RatingViewStar} from './RatingViewStar';
+export {CardPreviewExtra} from './CardPreviewExtra';
+export {VideoCardPlayer} from './VideoCardPlayer';

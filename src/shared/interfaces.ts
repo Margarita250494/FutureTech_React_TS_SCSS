@@ -143,6 +143,7 @@ export interface Video {
   duration: string;
   title: string;
   description: string;
+  link?:string;
 }
 
 export interface SummaryItem {
@@ -163,4 +164,21 @@ export interface Blog {
   subMainInfo:Record<string,string>,
   actions:ActionProps[],
   summary:SummaryProps[]
+}
+
+interface PodcastDetail {
+  title: string;
+  value: string;
+}
+
+export interface Podcast {
+  icon: string;
+  title: string;
+  rating: number;
+  host: string;
+  video: string;
+  poster: string;
+  cardCellTitle:string;
+  description: string;
+  details: PodcastDetail[];
 }

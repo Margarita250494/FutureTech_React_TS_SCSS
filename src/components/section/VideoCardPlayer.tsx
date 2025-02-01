@@ -9,9 +9,10 @@ type Props = {
     height:string;
     className:string;
     isCenter?:boolean;
+    small?:boolean;
 }
 
-export const VideoCardPlayer = ({video, poster, duration,width,height,className,isCenter}: Props) => {
+export const VideoCardPlayer = ({video, poster, duration,width,height,className,isCenter,small}: Props) => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
       const [isPlaying, setIsPlaying] = useState(false);
     
@@ -32,7 +33,7 @@ export const VideoCardPlayer = ({video, poster, duration,width,height,className,
       <video
         ref={videoRef}
         src={video}
-        className="video-player__video"
+        className={`video-player__video ${small ? "video-player__video--small" : ""}`}
         width={width}
         height={height}
         poster={poster}

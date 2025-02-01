@@ -175,6 +175,11 @@ export type VideoCardProps = {
   duration: string;
   title: string;
   description: string;
+  link?:boolean;
+  width:string;
+  height:string;
+  small?:boolean;
+  
 }
 
 export type ButtonIconProps = {

@@ -18,6 +18,7 @@ type Props = {
 export const CardPreviewExtra = ({bodyClassName,subtitle,description,eyeLink,arrowLink,href,text,src,arrowClassName,h3}:Props) => {
   return (
     <div className={bodyClassName}>
+      <div className="card__cell tile">
       {h3 ? 
       (<h3 className="card__cell-subtitle">{subtitle}</h3>) 
       : 
@@ -37,6 +38,8 @@ export const CardPreviewExtra = ({bodyClassName,subtitle,description,eyeLink,arr
         children={text}
         />
       ) : null}
+      </div>
+      
     </div>
   );
 };

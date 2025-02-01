@@ -1,5 +1,6 @@
 import { Header } from "@/components/section/Header"
 import { VideoBody } from "./VideoBody"
+import { videoData } from "../newsData"
 
 export const FeaturedVideosSection = () => {
   return (
@@ -11,7 +12,7 @@ export const FeaturedVideosSection = () => {
         to="/"
         link="View All"
         />
-        <VideoBody/>
+        <VideoBody video={videoData} cols2={true} width="718" height="412"/>
     </section>
   )
 }

@@ -1,3 +1,4 @@
+import { LinkImgArrow } from "@/components/LinkImgArrow";
 import { Description } from "@/components/section/Description";
 import { VideoCardPlayer } from "@/components/section/VideoCardPlayer";
 import { VideoCardProps } from "@/shared/types";
@@ -9,6 +10,11 @@ export const VideoCard = ({
   duration,
   title,
   description,
+  link,
+  width,
+  height,
+  small
+
 }: VideoCardProps) => {
     
   return (
@@ -16,10 +22,11 @@ export const VideoCard = ({
       <VideoCardPlayer
       className="video-card__player video-player"
       video={video}
-      width="718"
-      height="412"
+      width={width}
+      height={height}
       poster={poster}
-      duration={duration}/>
+      duration={duration}
+      small={small}/>
       
       <Description
       bodyClassName="video-card__body"
@@ -28,7 +35,16 @@ export const VideoCard = ({
       title={title}
       descClassName="video-card__description"
       desc={description}/>
+
+      {link && (
+        <LinkImgArrow
+        className="video-card__link button"
+        children="Listen Podcast"
+        href="/"
+        />
+      )}
     </div>
   );
 };
+
 
