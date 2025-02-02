@@ -1,7 +1,10 @@
 import { Helmet } from "react-helmet-async";
-import { Metrics } from "../home/hero/Metrics";
 import { motion } from "framer-motion";
 import { fadeAnimation } from "@/shared/constants";
+import { ResHeroSection } from "./ResHeroSection";
+import { AboutSection } from "../home/homeImport";
+import { ReportsSection } from "./ReportsSection";
+
 
 
 //type Props = {}
@@ -15,8 +18,9 @@ export const Resources = () => {
       <motion.section
         {...fadeAnimation}
       >
-        <h1>Welcome to the Resources Page</h1>
-        <Metrics />
+        <ResHeroSection/>
+        <ReportsSection/>
+        <AboutSection/>
       </motion.section>
     </>
   );

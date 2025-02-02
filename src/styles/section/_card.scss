@@ -113,6 +113,18 @@
                 grid-template-columns: repeat(3, 1fr);
             }
         }
+        &--3-cols-alt {
+            grid-template-columns: repeat(3, 1fr);
+            gap: fluid(50, 20) rem(20);
+      
+            @include laptop {
+              column-gap: rem(16);
+            }
+      
+            @include mobile-s {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
     }
 
     &__cell {
@@ -123,6 +135,20 @@
 
         &--wide {
             grid-column: -1/1;
+        }
+        &--wide-on-mobile-s {
+            @include mobile-s {
+              grid-column: -1 / 1;
+            }
+          }
+
+        &:not(.tile){
+            @include mobile-s{
+                grid-template: initial;
+                .card__cell-link{
+                    grid-area: initial;
+                }
+            }
         }
 
         &:has(> *:only-child) {
@@ -136,6 +162,7 @@
                 "other link";
             align-items: center;
             gap: fluid(14, 10) rem(20);
+
         }
         &:not(.tile) {
             @include mobile-s {
@@ -167,6 +194,17 @@
 
             @include laptop {
                 border-radius: rem(10);
+            }
+        }
+
+        &.tile{
+            padding: fluid(40, 20);
+        }
+
+        &-description{
+            //text-wrap: nowrap;
+            @include mobile-s{
+                font-size: rem(14);
             }
         }
     }

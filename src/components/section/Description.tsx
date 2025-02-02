@@ -19,9 +19,9 @@ export const Description = ({
       ) : h4 ? (
         <h4 className={titleClassName}>{title}</h4>
       ) : null}
-      <div className={descClassName}>
+      {desc && (<div className={descClassName}>
         <p>{desc}</p>
-      </div>
+      </div>)}
     </div>
   );
 };

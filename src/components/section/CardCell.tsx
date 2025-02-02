@@ -11,6 +11,8 @@ export const CardCell = ({ data }: CardProps) => {
   );
 };
 
+
+
 export const CardCellExtra = ({ title, description, src, width, height }: CardExtraProps) => {
   return (
     <>

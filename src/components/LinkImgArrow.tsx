@@ -6,11 +6,12 @@ type Props = {
   href:string;
   text:string;
   src:string;
+  download?:boolean;
 }
 
-export const LinkImgArrow = ({ href, className, children }: ImgArrowProps) => {
+export const LinkImgArrow = ({ href, className, children,download }: ImgArrowProps) => {
   return (
-    <NavLink to={href} className={className}>
+    <NavLink to={href} className={className} download={download}>
       <span className="icon">
         {children}
         <img className="icon--yellow-arrow" src={yellowArrow} alt="" />

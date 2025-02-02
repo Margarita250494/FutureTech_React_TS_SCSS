@@ -1,6 +1,7 @@
 import { fadeAnimation } from "@/shared/constants";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import { SectionHeader } from "./SectionHeader";
 
 export const Contact = () => {
   return (
@@ -9,7 +10,7 @@ export const Contact = () => {
         <title>Future Tech | Contact</title>
       </Helmet>
       <motion.section {...fadeAnimation}>
-        <h1>Welcome to Contact</h1>
+        <SectionHeader/>
       </motion.section>
     </>
   );

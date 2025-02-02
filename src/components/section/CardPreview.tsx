@@ -12,6 +12,10 @@ export const CardPreview = ({
   className,
   extra,
   people,
+  h2,
+  h3,
+  h4,
+  classNameH3
 }: CardPreviewProps) => {
   return (
     <div className="card__preview">
@@ -26,8 +30,10 @@ export const CardPreview = ({
         />
         <Description
         bodyClassName="card__preview-info"
-        h3={true}
-        titleClassName="card__preview-title"
+        h3={h3}
+        h2={h2}
+        h4={h4}
+        titleClassName={`card__preview-title ${h3 && "h3"} ${h4 && "h3"} ${classNameH3 && "h3"}`}
         title={title}
         descClassName="card__preview-description"
         desc={description}/>

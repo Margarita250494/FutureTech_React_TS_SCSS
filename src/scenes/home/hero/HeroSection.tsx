@@ -15,7 +15,7 @@ export const HeroSection = () => {
             desc="Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us on this visionary expedition into the heart of AI."
           />
         </div>
-        <Metrics />
+        <Metrics className="hero__metrics full-vw-line full-vw-line--top full-vw-line--left"/>
         <div className="hero__resources-preview resources-preview">
           <Team 
           classname="resources-preview__team team" people={team}/>

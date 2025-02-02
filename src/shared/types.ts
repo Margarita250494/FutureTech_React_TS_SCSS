@@ -47,6 +47,7 @@ export type ImgArrowProps = {
     href:string;
     className:string;
     children:React.ReactNode;
+    download?:boolean;
 };
 
 //components => Title.tsx
@@ -97,12 +98,16 @@ export type CardExtraProps = {
 export type CardPreviewProps = {
   img: string;
   title: string;
-  description: string;
+  description?: string;
   link?: string;
   href?: string;
   className?: string;
   extra?: { subTitle: string; subDescription: string; images: TeamMember[] };
   people?: TeamMember[];
+  h2?:boolean;
+  h3?:boolean;
+  h4?:boolean;
+  classNameH3?:boolean;
 };
 
 //components => section => Header.tsx
@@ -221,6 +226,6 @@ export type DescriptionProps = {
   h3?: boolean;
   h4?: boolean;
   title: string;
-  descClassName: string;
-  desc: string;
+  descClassName?: string;
+  desc?: string;
 }

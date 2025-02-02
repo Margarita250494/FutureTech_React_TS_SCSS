@@ -19,7 +19,7 @@ export const metricsData: Array <Metrics> = [
         sign: "+"
     },
     {
-        title:"Countries Accesses Our Content",
+        title:"Countries Accesses",
         value:"100",
         sign: "+"
     },
