@@ -1,6 +1,9 @@
 import { CardPreview } from "@/components/section/CardPreview";
 import icon2 from "@/assets/icons/contacts/1.svg";
 
+import { faq } from "./data";
+import { Accordion } from "./Accordion";
+
 export const AccordionMain = () => {
   return (
     <div className="list__item">
@@ -15,7 +18,17 @@ export const AccordionMain = () => {
           link="Ask Question"
           href="/"
         />
-        <div className="card__body">Not Form</div>
+        <div className="card__body">
+          <div className="accordion-group">
+            {faq.map((question)=>(
+              <Accordion
+              key={question.id}
+              id={question.id}
+              title={question.title}
+              content={question.content}/>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

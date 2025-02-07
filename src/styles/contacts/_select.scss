@@ -1,0 +1,138 @@
+@use "../helpers" as *;
+@use "../variables";
+
+.feedback-form {
+    .select-phone {
+        .field__body > div {
+            width: 100%;
+        }
+    }
+
+    .react-tel-input {
+        .flag-dropdown {
+            @include flex-center;
+            border: none;
+            &.open,
+            .selected-flag {
+                border: none;
+                background-color: inherit !important;
+            }
+            .selected-flag {
+                border-radius: 0;
+                padding: 0;
+                column-gap: 1rem;
+                @include flex-center;
+                &:hover,
+                &:focus {
+                    background-color: inherit;
+                }
+                .flag {
+                    margin-top: 0;
+                    top: auto;
+                    display: flex;
+                    align-items: center;
+                    .arrow {
+                        top: 0;
+                        border-left: none;
+                        border-top: none;
+                        border-right: none;
+                        width: 6px;
+                        height: 6px;
+
+                        @include flex-center;
+                        border: solid var(--color-light);
+                        border-width: 1px 1px 0 0;
+                        transform: rotate(135deg);
+                        position: relative;
+
+                        &.up {
+                            transform: rotate(315deg);
+                            top: 20%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form-control {
+            width: 100%;
+            height: rem(67);
+            border-radius: rem(8);
+            color: var(--color-dark-40);
+            background-color: var(--color-dark-10);
+            border: var(--border);
+            border-radius: rem(8);
+            padding-inline: rem(85);
+
+            &:placeholder-shown {
+                font-family: var(--font-family-base);
+                font-size: rem(18);
+                @include laptop {
+                    font-size: rem(16);
+                }
+            }
+
+            @include laptop {
+                height: rem(53);
+                border-radius: rem(6);
+                padding-inline: rem(81);
+            }
+        }
+        .flag-dropdown {
+            border-top-left-radius: rem(8);
+            border-bottom-left-radius: rem(8);
+            color: var(--color-dark-40);
+            background-color: var(--color-dark-10);
+            border: var(--border);
+            padding: rem(16.5) rem(18);
+
+            @include laptop {
+                border-top-left-radius: rem(6);
+                border-bottom-left-radius: rem(6);
+                padding: rem(11.5) rem(12);
+            }
+        }
+
+        .country-list {
+            top: 105%;
+            left: 0;
+            background-color: var(--color-dark-15);
+            border-radius: rem(8);
+
+            @include laptop {
+                border-radius: rem(6);
+            }
+            .country {
+                &:hover {
+                    color: var(--color-yellow-55);
+                    background-color: var(--color-dark);
+                }
+                &.highlight {
+                    background-color: var(--color-dark-10);
+                    color: var(--color-yellow-55);
+                }
+
+                display: flex;
+                column-gap: 1rem;
+                justify-content: start;
+                align-items: center;
+                .country-name {
+                    color: var(--color-light);
+                    font-family: var(--font-family-base);
+                    font-size: rem(18);
+                    @include laptop {
+                        font-size: rem(16);
+                    }
+                }
+                .dial-code {
+                    color: var(--color-dark-60) !important;
+                    font-family: var(--font-family-base);
+                    font-size: rem(18);
+                    @include laptop {
+                        font-size: rem(16);
+                    }
+                }
+            }
+        }
+    }
+}

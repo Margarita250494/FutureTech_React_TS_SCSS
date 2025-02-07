@@ -19,7 +19,7 @@ export const SectionHeader = () => {
             <div className="contacts-card">
               <h2 className="contacts-card__title h6">General Inquiries</h2>
               <div className="contacts-card__body">
-                <div className="soc1als">
+                <div className="soc1als soc1als--3-cols ">
                   <FooterSocials />
                 </div>
               </div>

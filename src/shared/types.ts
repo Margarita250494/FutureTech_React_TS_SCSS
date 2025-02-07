@@ -229,3 +229,9 @@ export type DescriptionProps = {
   descClassName?: string;
   desc?: string;
 }
+
+export type FAQProps = {
+  id:string,
+  title:string,
+  content:string
+}

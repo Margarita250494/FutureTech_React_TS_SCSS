@@ -1,5 +1,6 @@
 import { CardPreview } from "@/components/section/CardPreview";
 import icon1 from "@/assets/icons/contacts/1.svg"
+import { Form } from "./Form";
 
 
 export const FormMain = () => {
@@ -11,7 +12,9 @@ export const FormMain = () => {
           title="Get in Touch with AI Podcasts"
           img={icon1}
         />
-        <div className="card__body">Form</div>
+        <div className="card__body">
+          <Form/>
+        </div>
       </div>
     </div>
   );

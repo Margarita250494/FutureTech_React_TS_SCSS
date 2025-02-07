@@ -38,6 +38,8 @@
 @use 'section/about-card';
 @use 'section/about';
 
+
+
 @use 'news/hero-alt';
 @use 'news/summary';
 @use 'news/news-card';
@@ -48,7 +50,18 @@
 @use 'blog/table-of-contents';
 @use 'blog/blog-details';
 
-@use 'podcasts/_report-card'
+@use 'podcasts/report-card';
+
+@use 'contacts/contacts-card.scss';
+@use 'contacts/field';
+@use 'contacts/select';
+@use 'contacts/checkbox';
+@use 'contacts/feedback-form';
+@use 'contacts/accordion-group';
+@use 'contacts/accordion';
+@use 'contacts/contacts';
+
+
 
 
 
