@@ -145,3 +145,48 @@ button{
     }
     
 }
+
+textarea{
+    &:focus-visible{
+        outline: none !important;
+      }
+}
+
+input {
+    &:focus-visible{
+        outline: none !important;
+      }
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-internal-autofill-selected {
+      background-color: var(--color-dark-40) !important;
+      color: var(--color-dark-50) !important;
+  
+      /* Reset any unwanted browser appearance */
+      appearance: none !important;
+      background-image: none !important;
+    }
+  
+    /* For Firefox-specific autofill handling */
+    &:-internal-autofill-selected {
+      background-color: var(--color-dark-40) !important;
+      color: var(--color-dark-50) !important;
+      appearance: none !important;
+      background-image: none !important;
+    }
+  
+    /* Reset the internal styles */
+    &:-webkit-autofill {
+      background-color: var(--color-dark-40) !important;
+      color: var(--color-dark-50) !important;
+      appearance: none !important;
+      background-image: none !important;
+    }
+  
+    &:-webkit-autofill:focus {
+      background-color: var(--color-dark-40) !important;
+      color: var(--color-dark-50) !important;
+      appearance: none !important;
+      background-image: none !important;
+    }
+  }

@@ -1,4 +1,6 @@
+import { JSX } from "react";
 import { TeamMember } from "./interfaces";
+
 
 //components => section => SectionBody.tsx
 export type SectionDataProps = {
@@ -234,4 +236,13 @@ export type FAQProps = {
   id:string,
   title:string,
   content:string
+}
+
+export type FormFieldProps = {
+  label: string;
+  id: string;
+  type?: "text" | "email" | "message";
+  placeholder:string;
+  required?: boolean;
+  autoComplete?:string;
 }

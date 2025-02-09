@@ -11,6 +11,9 @@ export const SelectPhone = () => {
         country={"in"} // Sets default to India (+91)
         value={phone}
         onChange={(phone) => setPhone(phone)}
+        inputProps={{
+          id: "phoneNumber",
+        }}
       />
     </div>
   );

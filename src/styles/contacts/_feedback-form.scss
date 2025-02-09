@@ -28,4 +28,10 @@
       row-gap: rem(20);
     }
   }
+  .success-message{
+    color:var(--color-yellow-55);
+  }
+  .error-message{
+    color:var(--color-red);
+  }
 }

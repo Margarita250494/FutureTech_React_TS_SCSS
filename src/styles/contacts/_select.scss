@@ -9,6 +9,7 @@
     }
 
     .react-tel-input {
+        
         .flag-dropdown {
             @include flex-center;
             border: none;
@@ -58,13 +59,15 @@
             width: 100%;
             height: rem(67);
             border-radius: rem(8);
-            color: var(--color-dark-40);
+            color: var(--color-light);
             background-color: var(--color-dark-10);
             border: var(--border);
             border-radius: rem(8);
             padding-inline: rem(85);
+            font-size: rem(18);
 
             &:placeholder-shown {
+                color: var(--color-dark-40);
                 font-family: var(--font-family-base);
                 font-size: rem(18);
                 @include laptop {
@@ -76,6 +79,7 @@
                 height: rem(53);
                 border-radius: rem(6);
                 padding-inline: rem(81);
+                font-size: rem(16);
             }
         }
         .flag-dropdown {
