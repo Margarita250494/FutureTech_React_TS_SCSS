@@ -8,7 +8,7 @@ export const ResourcesSection = () => {
         to="/resources"
         id="resources-title"
         subtitle="Your Gateway to In-Depth Information"
-        title="Unlock Valuable Knowledge with FutureTech's Resources"
+        title="Unlock Valuable Knowledge with FutureTech's Resources After"
         link="View All Resources"
       />
       <div className="section__body">

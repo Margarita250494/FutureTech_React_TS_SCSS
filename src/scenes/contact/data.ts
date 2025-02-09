@@ -1,4 +1,7 @@
-export const contacts = [
+import { Contacts, ContactsFaq } from "@/shared/interfaces"
+
+
+export const contacts: Array <Contacts> = [
     {
         title: "General Inquiries",
         email: "contact@ai-podcasts.com",
@@ -16,11 +19,12 @@ export const contacts = [
     },
 ]
 
-export const faq = [
+export const faq: Array <ContactsFaq> = [
     {
         id:"faq-1",
         title:"What is AI?",
-        content:"AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making."
+        content:"AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.",
+        isOpen:true
     },
     {
         id:"faq-2",

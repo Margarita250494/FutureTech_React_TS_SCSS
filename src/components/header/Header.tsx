@@ -49,6 +49,7 @@ export const Header = () => {
             </nav>
             <ContactUsLink
               className={`header__contact-us-link button button--accent ${isMenuVisible && isMobile ? "" : "visible-mobile"}` }
+              closeMenu={closeMenu}
             />
           </div>
 

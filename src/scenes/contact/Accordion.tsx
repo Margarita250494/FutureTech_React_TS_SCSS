@@ -1,10 +1,10 @@
 import { FAQProps } from "@/shared/types";
 
 
-export const Accordion = ({id,title,content}:FAQProps) => {
+export const Accordion = ({id,title,content,isOpen}:FAQProps) => {
   return (
     <div className="accordion tile">
-      <details className="accordion__details" name="faq">
+      <details className="accordion__details" name="faq" open={isOpen}>
         <summary className="accordion__summary">
           <h4 className="accordion__title h6">
             <span role="term" aria-details={id}>

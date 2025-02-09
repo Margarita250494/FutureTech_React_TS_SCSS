@@ -1,7 +1,6 @@
 import { FooterSocials } from "@/components/footer/FooterSocials";
 import { contacts } from "./data";
 import { ContactCard } from "./ContactCard";
-import { SectionBody } from "./SectionBody";
 
 export const SectionHeader = () => {
   return (
@@ -27,7 +26,6 @@ export const SectionHeader = () => {
           </li>
         </ul>
       </header>
-      <SectionBody/>
     </section>
   );
 };

@@ -1,12 +1,6 @@
 import { LinkImgArrow } from '@/components/LinkImgArrow';
+import { ContactCardProps } from '@/shared/types';
 
-type ContactCardProps = {
-    title: string;
-    email?: string;
-    phone?: string;
-    address?: string;
-    direction?: string;
-  };
 
 export const ContactCard = ({ title, email, phone, address, direction }: ContactCardProps) => {
   return (

@@ -36,7 +36,8 @@ export type BlogCardProps = {
 //components => header =>ContactUsLink.tsx
 export type ContactUsProps = {
     className:string;
-    style?: React.CSSProperties
+    style?: React.CSSProperties,
+    closeMenu?: () => void;
 }
 
 //components => header =>Link.tsx
@@ -235,7 +236,8 @@ export type DescriptionProps = {
 export type FAQProps = {
   id:string,
   title:string,
-  content:string
+  content:string,
+  isOpen?:boolean
 }
 
 export type FormFieldProps = {
@@ -246,3 +248,11 @@ export type FormFieldProps = {
   required?: boolean;
   autoComplete?:string;
 }
+
+export type ContactCardProps = {
+  title: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  direction?: string;
+};

@@ -25,7 +25,8 @@ export const AccordionMain = () => {
               key={question.id}
               id={question.id}
               title={question.title}
-              content={question.content}/>
+              content={question.content}
+              isOpen={question.isOpen}/>
             ))}
           </div>
         </div>

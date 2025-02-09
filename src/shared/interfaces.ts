@@ -1,4 +1,5 @@
 import { ActionProps, SummaryProps } from "./types";
+import { JSX } from "react";
 
 export interface LinkData {
   to: string;
@@ -181,4 +182,19 @@ export interface Podcast {
   cardCellTitle:string;
   description: string;
   details: PodcastDetail[];
+}
+
+export interface Contacts {
+  title:string,
+  email?: string,
+  phone?: string,
+  address?:string,
+  direction?:string
+}
+
+export interface ContactsFaq {
+  id:string,
+  title:string,
+  content:string,
+  isOpen?:boolean
 }

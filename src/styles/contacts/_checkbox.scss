@@ -13,10 +13,10 @@
     }
   
     @include hover {
-      color: var(--color-accent);
+      color: var(--color-yellow-55);
   
       .checkbox__input {
-        border-color: var(--color-accent);
+        border-color: var(--color-yellow-55);
       }
     }
   
